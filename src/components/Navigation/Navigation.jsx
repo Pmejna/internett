@@ -1,9 +1,10 @@
 import React, {useEffect, useState, useRef} from 'react';
 import styled from 'styled-components';
 
-
 import Hamburger from './Hamburger/Hamburger';
 import NavList from './NavList/NavList';
+
+import logoImg from '../../assets/images/Logo.svg';
 
 const NavigationWrapper = styled.header`
     position: fixed;
@@ -19,24 +20,25 @@ const NavigationWrapper = styled.header`
     color: rgb(0, 0, 0);
     padding: var(--main-padding);
     box-shadow: 0 -0.7rem 0.5rem 1rem rgba(155, 155, 155, 0.3);
+    z-index: 98;
 
     @media (max-width: 1200px) {
-        box-shadow: none;
-        background-color: transparent;
+        /* box-shadow: none; */
+        /* background-color: transparent; */
     }
 `;
 
 const Logo = styled.img`
-    width: 60px;
-    height: 20px;
-    background-color: #FB2525;
-    z-index: 3;
+    width: 11rem;
+    height: auto;
+    background-color: transparent;
+    z-index: 99;
 `;
 
 
 
 const Navigation = () => {
-
+    
     // state for menu button
     const [state, setState] = useState({
         initial: false,
@@ -89,12 +91,12 @@ const Navigation = () => {
         setTimeout(() => {
             setDisabled(false);
         }, 1200);
-    }
+    };
 
     return (
         
             <NavigationWrapper>
-                <Logo />
+                <Logo src={logoImg}/>
                 <NavList state={state} linkClicked={handleMenuClick}/>
                 <Hamburger disabled={disabled} clicked={handleMenu} text={state.menuName}/>
             </NavigationWrapper>

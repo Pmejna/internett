@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import gsap from 'gsap';
 
 const NavItemWrapper = styled.li`
     a {
@@ -13,6 +14,11 @@ const NavItemWrapper = styled.li`
             font-size: 6rem;
             color: #fff;
             font-weight: 700;
+            display: block;
+            
+            &:hover {
+                color: #000;
+            }
         }
     }
 
@@ -21,12 +27,32 @@ const NavItemWrapper = styled.li`
     }
 `;
 
-const NavItem = ({path, text, linkClicked}) => {
+const NavItem = React.forwardRef( (props, ref) => {
+    const handleHover = (e) => {
+        gsap.to(e.target, {
+            duration: 0.3,
+            y: 4,
+            skewX: 5,
+            ease: 'Power3.inOut'
+        })
+        console.log(e.target);
+    };
+
+    const handleHoverExit = (e) => {
+        gsap.to(e.target, {
+            duration: 0.3,
+            y: -4,
+            skewX: 0,
+            ease: 'Power3.inOut'
+        })
+    };
+
     return (
-        <NavItemWrapper>
-            <Link to={path} onClick={linkClicked}>{text}</Link>
+        <NavItemWrapper ref={ref}>
+            <Link to={props.path} onClick={props.linkClicked} onMouseEnter={(e) => handleHover(e)} onMouseOut={(e) => handleHoverExit(e)}>{props.text}</Link>
+            {console.log(ref)}
         </NavItemWrapper>
     )
-};
+}); 
 
 export default NavItem
