@@ -18,7 +18,7 @@ Internet światłowodowy to aktualnie najkorzystniejsza użytkowa technologia do
 
 const boxSection = {
     box_data: {
-        header: `Internet światłowodowy`,
+        header: `Internet światłowodowy i jego zalety`,
         paragraph: `To rozwiązanie technologiczne, w przeciwieństwie do na przykład internetu mobilnego, szczyci się bardzo wysoką odpornością na warunki atmosferyczne,
          które mogą wpływać na jakość odbieranego sygnału, zatem i na komfort w odbiorze treści pozyskanych przez sieć. Dzięki internetowi światłowodowym streaming
           filmów i treści jest stabilny a jakość grania w opcjach multiplayer płynna i bez opóźnień. Wysoka jakość odbioru treści jest możliwa dzięki bardzo niskiej
@@ -40,6 +40,14 @@ const boxSection = {
         image: image2,
         alt: `stabilny internet w kazdych warunkach`
     },
+    companyInternet_data: {
+        header: `Internet dla firm`,
+        paragraph: `Nasza oferta nie jest skierowana jedynie do klienta indywidualnego. Zapraszamy do współpracy wszystkie firmy znajdujące się w zasięgu naszej sieci światłowodowej. Pandemia wirusa covid19 zmieniła świat szybciej niż to planowaliśmy. Wiele biznesów przeniosło całą swoją komunikację oraz swoje biurowe życie do internetu. `
+    },
+    internetPackages_Data: {
+        header: `Internet światłowodowy pakiety`,
+        paragraph: `Zapoznaj się z naszą ofertą i dopasuj wysokość dostarczanych usług do intensywności użytkowania i własnych potrzeb. Oferujemy następujące pakiety użytkowania internetu światłowodowego i każdy z nich różni się prędkością łącza dostarczanego sygnału. Nie zakładamy limitów pobierania. Po podpisaniu umowy i wybraniu dopasowanej do Ciebie usługi możesz cieszyć się internetem bez granic. Każdą umowę podpisujemy na czas nieokreślony, z założeniem jednego miesiąca okresu wypowiedzenia. Oferujemy również możliwość czsowego zawieszenia usługi dostarczenia internetu światłowodowego. Chcemy aby współpraca z nami była taka sama jak technologia którą sprzedajemy: wygodna, niezawodna i w pełni przejrzysta.`,
+    }
 };
 
 const mainPageImages = {
