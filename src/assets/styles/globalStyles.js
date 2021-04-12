@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
         --main-red: #FB2525;
         --main-dark: rgb(20,20,25);
         --main-gray: rgb(250,250,250);
+        --main-shadow: 2px 5px 12px rgba(101, 93, 93, 0.16);
         --nav-height: 6rem;
     }
 

@@ -2,12 +2,23 @@ import React from "react"
 import styled from 'styled-components';
 
 import MainSlide from "../components/MainSlide/MainSlide";
-import SEO from "../components/seo"
+import SEO from "../components/seo";
 
 import {mainSlide, mainParagraph, boxSection, mainPageImages} from '../assets/texts/mainpage';
 import VerticalSection from "../components/VerticalSection/VerticalSection";
 import Lines01 from "../components/Lines/Lines01";
 import Button from "../components/Button/Button";
+import OfferPackage from '../components/offerPackage/OfferPackage';
+import AboutSection from "../components/AboutSection/AboutSection";
+
+const SectionText = styled.div`
+
+    width: 100%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    padding: var(--main-padding);
+`;
 
 const SectionOffer = styled.section`
   display: flex;
@@ -23,23 +34,16 @@ const SectionOffer = styled.section`
 
 const SectionPackages = styled.section`
     background-color: var(--main-gray);
+    padding: 0;
     
-
-    div {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
   p {
     text-align: center;
     margin-bottom: 2rem;
   }
 `;
 
-const SectionPackagesText = styled.div`
-
+const SectionAbout = styled.section`
+  padding: 0;
 `;
 
 const IndexPage = () => { 
@@ -66,12 +70,19 @@ const IndexPage = () => {
       <Button text='zobacz ofertę dla firm'/>
     </SectionOffer>
     <SectionPackages>
-      <SectionPackagesText>
+      <SectionText>
           <h2>{boxSection.internetPackages_Data.header}</h2>
           <p>{boxSection.internetPackages_Data.paragraph}</p>
-      </SectionPackagesText>
-      {/* <PackagesCards/> */}
+      </SectionText>
+      <OfferPackage />
     </SectionPackages>
+    <SectionAbout>
+        <SectionText>
+          <h2>{boxSection.about_data.header}</h2>
+          <p>{boxSection.about_data.paragraph}</p>
+        </SectionText>
+        <AboutSection data={boxSection.about_data.cards}/>
+    </SectionAbout>
   </>
 )
   }
