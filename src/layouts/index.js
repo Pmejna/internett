@@ -6,6 +6,8 @@ import Navigation from '../components/Navigation/Navigation';
 import GlobalStyles from '../assets/styles/globalStyles';
 import SEO from "../components/seo";
 
+import Contact from '../components/Contact/Contact';
+
 const MainContent = styled.main`
   /* margin-top: var(--nav-height); */
   visibility: hidden;
@@ -23,6 +25,7 @@ const MainLayout = ({children}) => {
     <Navigation />
     <MainContent ref={el => app = el}>
       {children}  
+    <Contact />
     </MainContent>
   </>
 )}
