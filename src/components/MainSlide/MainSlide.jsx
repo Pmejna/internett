@@ -79,10 +79,10 @@ const MainSlideText = styled.div`
     }
 `;
 
-const MainSlide = ({mainText, subText, buttonText, aboveText, priceText}) => {
+const MainSlide = ({mainText, subText, buttonText, aboveText, priceText, image}) => {
     return (
         <MainSlideWrapper>
-            <MainSlideImage src={bgImage}/>
+            <MainSlideImage src={image ? image : bgImage}/>
             <MainSlideImageShade />
             <MainSlideText>
                 <h1>{mainText}</h1>

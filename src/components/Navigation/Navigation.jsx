@@ -5,20 +5,7 @@ import NavHorizontal from './NavHorizontal/NavHorizontal';
 import NavResponsive from './NavResponsive/NavResponsive';
 
 const NavigationWrapper = styled.header`
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: var(--nav-height);
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    color: rgb(0, 0, 0);
-    padding: var(--main-padding);
-    box-shadow: 0 -0.7rem 0.5rem 1rem rgba(155, 155, 155, 0.3);
-    z-index: 98;
+    
 
     @media (max-width: 1200px) {
         /* box-shadow: none; */
