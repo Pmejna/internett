@@ -1,10 +1,8 @@
 import React, {useEffect, useState, useRef} from 'react';
 import styled from 'styled-components';
 
-import Hamburger from './Hamburger/Hamburger';
-import NavList from './NavList/NavList';
-
-import logoImg from '../../assets/images/Logo.svg';
+import NavHorizontal from './NavHorizontal/NavHorizontal';
+import NavResponsive from './NavResponsive/NavResponsive';
 
 const NavigationWrapper = styled.header`
     position: fixed;
@@ -27,15 +25,6 @@ const NavigationWrapper = styled.header`
         /* background-color: transparent; */
     }
 `;
-
-const Logo = styled.img`
-    width: 11rem;
-    height: auto;
-    background-color: transparent;
-    z-index: 99;
-`;
-
-
 
 const Navigation = () => {
     
@@ -96,9 +85,9 @@ const Navigation = () => {
     return (
         
             <NavigationWrapper>
-                <Logo src={logoImg}/>
-                <NavList state={state} linkClicked={handleMenuClick}/>
-                <Hamburger disabled={disabled} clicked={handleMenu} text={state.menuName}/>
+                <NavHorizontal state={state} disabled={disabled} clicked={handleMenu}/>
+                <NavResponsive responsive state={state} linkClicked={handleMenuClick}/>
+                
             </NavigationWrapper>
     )
 };
