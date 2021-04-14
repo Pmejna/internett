@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import gsap from 'gsap';
 
 const VerticalSectionWrapper = styled.section`
     margin-bottom: 5rem;
@@ -20,6 +19,20 @@ const VerticalSectionWrapper = styled.section`
         width: 100%;
         flex-basis: 55%;
     }
+
+    @media (max-width: 1360px) {
+        img {
+            height: 100%;
+            display: block;
+            object-fit: none;
+            object-position: 50% 50%;
+        }
+    }
+    @media (max-width: 1120px) {
+        img {
+
+        }
+    }
 `;
 
 
@@ -33,6 +46,14 @@ const VerticalBoxFirst = styled.div`
 
     p {
         padding-right: 5rem;
+    }
+
+    @media (max-width: 1120px) {
+
+        
+        img {
+            
+        }
     }
 `;
 const VerticalBoxSecond = styled.div`
@@ -50,6 +71,14 @@ const VerticalBoxSecond = styled.div`
     }
     p {
         padding-left: 5rem;
+    }
+
+    @media (max-width: 1120px) {
+
+        
+        img {
+            
+        }
     }
 `;
 

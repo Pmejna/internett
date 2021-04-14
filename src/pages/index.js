@@ -11,6 +11,8 @@ import Button from "../components/Button/Button";
 import OfferPackage from '../components/offerPackage/OfferPackage';
 import AboutSection from "../components/AboutSection/AboutSection";
 
+
+
 const SectionText = styled.div`
 
     width: 100%;
@@ -35,7 +37,7 @@ const SectionOffer = styled.section`
 const SectionPackages = styled.section`
     background-color: var(--main-gray);
     padding: 0;
-    
+
   p {
     text-align: center;
     margin-bottom: 2rem;
@@ -56,6 +58,7 @@ const IndexPage = () => {
       buttonText={buttonText} 
       aboveText={aboveText}
       priceText={priceText}
+      main
     />
     <section>
       <p>{mainParagraph}</p>
@@ -76,7 +79,7 @@ const IndexPage = () => {
       </SectionText>
       <OfferPackage />
     </SectionPackages>
-    <SectionAbout>
+    <SectionAbout id='onas'>
         <SectionText>
           <h2>{boxSection.about_data.header}</h2>
           <p>{boxSection.about_data.paragraph}</p>

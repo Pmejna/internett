@@ -7,7 +7,7 @@ import bgImage from '../../assets/images/001.jpeg';
 
 const MainSlideWrapper = styled.section`
     width: 100vw;
-    height: 100vh;
+    height: ${({main}) => main ? '100vh' : '70vh'};
     position: relative;
     overflow: hidden;
 `;
@@ -35,7 +35,7 @@ const MainSlideImageShade = styled.div`
 const MainSlideText = styled.div`
     position: absolute;
     top: 40%;
-    left: 10%;
+    left: 10rem;
 
     h1, p, span {
         width: 70%;
@@ -79,16 +79,21 @@ const MainSlideText = styled.div`
     }
 `;
 
-const MainSlide = ({mainText, subText, buttonText, aboveText, priceText, image}) => {
+const MainSlide = ({mainText, subText, buttonText, aboveText, priceText, image, main}) => {
     return (
-        <MainSlideWrapper>
+        <MainSlideWrapper main={main}>
             <MainSlideImage src={image ? image : bgImage}/>
             <MainSlideImageShade />
             <MainSlideText>
                 <h1>{mainText}</h1>
                 <p>{subText}<span>{priceText}</span></p>
-                <p className="aboveText">{aboveText}</p>
-                <Button text={buttonText}/>
+                {
+                    aboveText && <p className="aboveText">{aboveText}</p>
+                }
+
+                {   
+                 buttonText  && <Button text={buttonText}/>
+                }
             </MainSlideText>
         </MainSlideWrapper>
     )

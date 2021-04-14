@@ -18,6 +18,10 @@ const NavContent = styled.div`
     top: 0;
     left: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `;
 
 const NavBackground = styled.div`

@@ -59,7 +59,7 @@ const Contact = () => {
     const today = new Date();
     return (
         <>
-            <ContactSection>
+            <ContactSection id='kontakt'>
                 <h2>Kontakt w sprawie internetu światłowodowego</h2>
                 <p>Mamy nadzieję, że zauważyłeś, że jesteśmy pewni siebie i pewni sieci którą sukcesywnie tworzymy w Twojej okolicy od lat. Zapraszamy do kontaktu. Jesteśmy małą, lokalną polską firmą, która skupia się na naszych klientach w sposób indywidualny. Zapewniamy nie tylko najwyższą jakość łącza internetu światłowodowego, ale również indywidualną opiekę, która różni nas od wielkich dostawców tej samej technologii na rynku polskim.</p>
             </ContactSection>

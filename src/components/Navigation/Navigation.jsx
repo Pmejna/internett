@@ -36,7 +36,7 @@ const Navigation = () => {
             setState({
                 initial: null,
                 clicked: true,
-                menuName: "Close"
+                menuName: "Zamknij"
             })
             console.log(1);
         }
@@ -51,7 +51,7 @@ const Navigation = () => {
             setState(
                 {
                     clicked: !state.clicked,
-                    menuName: "Close"
+                    menuName: "Zamknij"
                 }
             )
             console.log(3);

@@ -1,12 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import bgImage from '../assets/images/tvn2.jpg';
+import MainSlide from '../components/MainSlide/MainSlide';
 
-const Onas = () => {
+
+// import 
+const OnasPage = () => {
     return (
-        <h2>
-            Panel Klienta
-        </h2>
+    <>
+        <MainSlide mainText='O nas' image={bgImage}/>
+    </>
     )
 };
 
-export default Onas
+export default OnasPage

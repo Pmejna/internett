@@ -5,60 +5,150 @@ import Button from '../../Button/Button';
 const CardPackageWrapper = styled.div`
     background-color: #fff;
     box-shadow: var(--main-shadow);
-    min-height: 540px;
+    min-height: ${({bestSeller}) => bestSeller ? '584px' : '540px'};
+    margin: ${({bestSeller}) => bestSeller ? '0 0' : '40px 0'};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    border: ${({bestSeller}) => bestSeller ? '2px solid #2784FE' : 'none'};
+`;
+
+const BestsellerLabel = styled.div`
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0.2rem 0;
+
 `;
 
 const CardPackageLabel = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 2rem 0;
+    height: ${({bestSeller}) => bestSeller ? '10rem' : '8rem'};
+    background-color: ${({color}) => color ? color : 'var(--main-red)'};
+    h3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
 
+        span {
+            font-weight: 300;
+            font-size: 1.2rem;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        span:nth-of-type(2) {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
 `;
 
 const CardPackageInfo = styled.div`
-
+    flex-basis: 50%;
 `;
 
 const PackageSpeed = styled.div`
+    background-color: #F1F1F1;
+    
+    p {
+        padding: 0.6rem 0;
+        font-weight: 300;
+    }
 
+    span {
+        margin-left: 2rem;
+        font-weight: 700;
+    }
 `;
 
 const PackagePerk = styled.div`
-
+    min-height: 103px;
+    p {
+        font-size: 1.4rem;
+    }
 `;
 
 const  PackagePrice = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: lowercase;
+    text-align: center;
+    .price {
+        position: relative;
+        font-weight: 300;
+        font-size: 4rem;
+        line-height: 4rem;
+   }
 
+    .from {
+        position: absolute;
+        left: -3rem;
+        bottom: -1rem;
+        font-size: 1.3rem;
+        text-transform: capitalize;
+    }
+`;
+
+const CardButton = styled(Button)`
+   
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+
+    a {
+        max-width: 220px;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+    }
+    }
 `;
 
 
 
-const CardPackage = ({data}) => {
+const CardPackage = ({data, color, bestSeller, subpage, link}) => {
     const {name, speed, perks, price} = data;
     return (
-        <CardPackageWrapper>
-            <CardPackageLabel>
+        <CardPackageWrapper bestSeller={bestSeller}>
+            <CardPackageLabel color={color} bestSeller={bestSeller}>
+            {
+                bestSeller ? 
+                <BestsellerLabel>najczęściej wybierany</BestsellerLabel>
+                :
+                null
+            }
                 <h3>
                     <span>Internet światłowodowy</span>
                     <span className="bigFont">pakiet {name}</span> 
                 </h3>
-                <p></p>
-                <h3>pakiet {name}</h3>
             </CardPackageLabel>
             <CardPackageInfo>
                 <PackageSpeed>
-                    <p>prędkość:<span>{speed}</span></p>
+                    <p>prędkość:<span>{speed}MB/S</span></p>
                 </PackageSpeed>
                 <PackagePerk>
-                    {perks.map(perk => <p key={perk.key}>{perk.perk}</p>)}
+                    {perks.map(perk => <p key={perk.key}>{perk.text}</p>)}
                 </PackagePerk>
-                <PackagePrice>
-                    <p>Od</p>
-                    <p className='price'>{price}</p>
+            </CardPackageInfo>
+            <PackagePrice>
+                    <div className='price'>{price}zł<span className='from'>Od</span></div>
                     <span>miesięcznie</span>
                 </PackagePrice>
-            </CardPackageInfo>
-            <Button></Button>
+                {
+                    subpage ? null : 
+                    <CardButton className='button' link={link}></CardButton>
+                }
         </CardPackageWrapper>
     )
 };

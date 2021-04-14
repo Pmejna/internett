@@ -19,6 +19,7 @@ const ButtonWrap = styled.button`
         z-index: 0;
         padding: 1rem 1.8rem;
         font-size: 1.8rem;
+        max-width: 250px;
         
         &::before{
         content: "";
@@ -42,10 +43,10 @@ const ButtonWrap = styled.button`
     }
 `;
 
-const Button = ({text}) => {
+const Button = ({text, className, link}) => {
     return (
-        <ButtonWrap>
-            <Link>{text ? text : 'więcej'}</Link>
+        <ButtonWrap className={className}>
+            <Link to={link}>{text ? text : 'więcej'}</Link>
         </ButtonWrap>
     )
 };

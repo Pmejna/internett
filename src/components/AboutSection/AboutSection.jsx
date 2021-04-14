@@ -16,6 +16,10 @@ const AboutWrapper = styled.div`
     grid-template-rows: auto;
     gap: 5rem;
     justify-content: space-between;
+
+    @media (max-width: 1200px) {
+        padding: var(--main-padding);
+    }
 `;
 
 const AboutSection = ({data}) => {
