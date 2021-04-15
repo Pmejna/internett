@@ -1,5 +1,5 @@
-import image1 from '../images/tvn.jpg';
-import image2 from '../images/kabel.jpg';
+import image1 from '../images/tvn1.jpg';
+import image2 from '../images/kabel1.jpg';
 
 export const data = {
     box_data: {
