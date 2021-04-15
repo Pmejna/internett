@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import bgImage from "../assets/images/tvn.jpg";
+import bgImage from "../assets/images/tvn1.jpg";
 import MainSlide from '../components/MainSlide/MainSlide';
 
 

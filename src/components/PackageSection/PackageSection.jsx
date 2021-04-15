@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import OfferPackageCard from '../OfferPackage/OfferPackageCard/OfferPackageCard';
+import OfferPackageCard from '../OfferPackage1/OfferPackageCard/OfferPackageCard';
 import miniLogo from '../../assets/images/LogoMini.svg';
 
 
