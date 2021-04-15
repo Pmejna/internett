@@ -11,6 +11,7 @@ export const data = {
         możliwości przepustowych sieci, w przypadku pobierania danych. Prędkość internetu światłowodowego wynosi nawet 1 gigabajt na sekundę. 
         Kolejnym bardzo ważnym elementem świadczącym o wysokiej jakości tej technologii jest fakt świadczący o stabilności sieci. 
     `,
+    image: image1,
     alt: 'szybki internet światłowodowy to komfort'
 },
 box2_data: {
@@ -21,5 +22,6 @@ box2_data: {
       Każdy z naszych klientów jest bezpośrednio podłączony do naszego serwera z pominięciem urządzeń aktywnych. Sprawia to, że mamy pełną kontrolę
        technologiczną i możemy szybko reagować na bardzo rzadko występujące awarie czy spadki sygnału. Ze względu na silny sygnał oraz stabilne łącze
         oferujemy również rozszerzenie oferty o założenie usługi odbierającej kanały telewizyjne przez nasz internet światłowodowy.`,
+    image: image2,
     alt: `stabilny internet w kazdych warunkach`
 },};

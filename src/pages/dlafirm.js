@@ -5,6 +5,7 @@ import bgImage from '../assets/images/Firma.jpeg';
 import VerticalSection from '../components/VerticalSection/VerticalSection';
 import {data} from '../assets/texts/dlaFirmText';
 
+
 const HeadSection = styled.section`
     padding: var(--main-padding);
     margin-bottom: 4rem;
