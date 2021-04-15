@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import OfferPackageCard from './offerPackageCard/offerPackageCard';
+import OfferPackageCard from './OfferPackageCard/OfferPackageCard';
 
 import packagesBg from '../../assets/images/PackagesBg.jpg';
 

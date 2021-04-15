@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import MainSlide from '../components/MainSlide/MainSlide';
 import VerticalSection from '../components/VerticalSection/VerticalSection';
 import bgImage from '../assets/images/DlaDomu.jpeg';
+import internetTvImage from '../assets/images/InternetTv.jpeg';
 import lines1 from '../assets/images/Group 15.png';
 import Lines01 from "../components/Lines/Lines01";
 import fibreImg from '../assets/images/fibre001.jpeg';
@@ -34,7 +35,7 @@ const FibreSection = styled.section`
 `;
 const FibreImageSection = styled.section`
     width: 100%;
-    min-height: 500px;
+    min-height: 400px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -47,9 +48,19 @@ const FibreImageSection = styled.section`
         text-align: center;
     }
 `;
+
+const BarWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 500px;
+`;
+
 const BarButton = styled(Button)`
     margin: 0;
 `;
+
 
 const FibreImageBar = styled.div`
     position: absolute;
@@ -59,16 +70,65 @@ const FibreImageBar = styled.div`
     height: 8rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0.6rem 12vw;
+    padding: 0.6rem 22vw;
     background-color: #fff;
     color: #000;
     border: 1px solid #e1e1e1;
+
+    p, span {
+        font-weight: 600;
+    }
+
+    span {
+        /* display: block; */
+        padding: 0.4rem;
+        background-color: var(--main-red);
+        color: #fff;
+    }
 `;
 
 const TvSection = styled.section`
 
+    margin-top: 5rem;
+
+    p, h2 {
+        text-align: center;
+    }
+
+    figure {
+        width: 100%;
+        height: 30vh;
+        overflow: hidden;
+        object-fit: cover;
+        margin-bottom: 4rem;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+`;
+
+const TvPerks = styled.div`
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: 120px;
+    grid-gap: 3rem;
+    justify-content: space-between;
+    margin-top: 4rem;
+`;
+
+const TvPerk = styled.div`
+    margin: 0 auto;
+    line-height: 100%;
+    border: 2px solid var(--main-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 `;
 
 
@@ -87,18 +147,26 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
                 <FibreImageSection>
                     <p> Oferujemy budowę oraz podłączenie do internetu światłowodowego oraz rozprowadzenie internetu bezprzewodowego po całej firmie aby jego sygnał był stabilny i silny w całej siedzibie firmy. Rozpoczynając z nami współpracę nie będziesz musiał martwić się fatalnej jakości połączeniami z klientem.</p>
                     <FibreImageBar>
-                        <p>100Mb/s juz od: <span>99zł</span></p>
-                        <BarButton />
+                        <BarWrapper>
+                            <p>100Mb/s juz od: <span>99zł</span></p>
+                            <BarButton text='sprawdz pakiety' link='/pakiety' bgColor='var(--main-dark)' hoverColor='var(--main-red)'/>
+                        </BarWrapper>
                     </FibreImageBar>
                 </FibreImageSection>
             </FibreSection>
             <Lines01 image={lines1} alt="superszybki internet"/>
             <TvSection>
-                <h2></h2>
+                <h2>Ofert telewizji internetowej</h2>
                 <figure>
-                    <img></img>
+                    <img src={internetTvImage}></img>
                 </figure>
-                <p></p>
+                <p>Najwyższa jakość filmów i seriali jest możliwa dzięki bardzo wysokiej prędkości, zatem  możliwości przepustowych sieci, w przypadku pobierania danych. Prędkość internetu światłowodowego wynosi nawet 1 gigabajt na sekundę. Kolejnym bardzo ważnym elementem świadczącym o wysokiej jakości tej technologii jest fakt świadczący o stabilności sieci. </p>
+                <TvPerks>
+                    <TvPerk><p>Korzysc1?</p> </TvPerk>
+                    <TvPerk><p>Korzysc1?</p> </TvPerk>
+                    <TvPerk><p>Korzysc1?</p> </TvPerk>
+                    <TvPerk><p>Korzysc1?</p> </TvPerk>
+                </TvPerks>
             </TvSection>
         </>
     )

@@ -6,6 +6,9 @@ const CardPackageWrapper = styled.div`
     background-color: #fff;
     box-shadow: var(--main-shadow);
     min-height: ${({bestSeller}) => bestSeller ? '584px' : '540px'};
+    min-height: ${({subpage}) => subpage ? '400px' : null};
+    min-width: 300px;
+    max-width: 350px;
     margin: ${({bestSeller}) => bestSeller ? '0 0' : '40px 0'};
     display: flex;
     flex-direction: column;
@@ -53,7 +56,12 @@ const CardPackageLabel = styled.div`
 `;
 
 const CardPackageInfo = styled.div`
-    flex-basis: 50%;
+
+    flex-basis: ${({subpage}) => subpage ? '80%' : '50%'};
+    min-height: ${({subpage}) => subpage ? '150px' : null};
+    p {
+        text-align: center;
+    }
 `;
 
 const PackageSpeed = styled.div`
@@ -112,15 +120,15 @@ const CardButton = styled(Button)`
         color: #fff;
         text-decoration: none;
     }
-    }
+    
 `;
 
 
 
-const CardPackage = ({data, color, bestSeller, subpage, link}) => {
+const CardPackage = ({data, color, bestSeller, subpage, link, className}) => {
     const {name, speed, perks, price} = data;
     return (
-        <CardPackageWrapper bestSeller={bestSeller}>
+        <CardPackageWrapper bestSeller={bestSeller}  className={className} subpage={subpage}>
             <CardPackageLabel color={color} bestSeller={bestSeller}>
             {
                 bestSeller ? 
@@ -133,7 +141,7 @@ const CardPackage = ({data, color, bestSeller, subpage, link}) => {
                     <span className="bigFont">pakiet {name}</span> 
                 </h3>
             </CardPackageLabel>
-            <CardPackageInfo>
+            <CardPackageInfo subpage={subpage}>
                 <PackageSpeed>
                     <p>prędkość:<span>{speed}MB/S</span></p>
                 </PackageSpeed>

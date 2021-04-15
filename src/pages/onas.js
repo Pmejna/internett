@@ -9,6 +9,7 @@ const OnasPage = () => {
     return (
     <>
         <MainSlide mainText='O nas' image={bgImage}/>
+        
     </>
     )
 };
