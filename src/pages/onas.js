@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import bgImage from '../assets/images/tvn2.jpg';
+import bgImage from '../assets/images/Tvn.jpg';
 import MainSlide from '../components/MainSlide/MainSlide';
 
 
@@ -9,7 +9,7 @@ const OnasPage = () => {
     return (
     <>
         <MainSlide mainText='O nas' image={bgImage}/>
-        
+
     </>
     )
 };
