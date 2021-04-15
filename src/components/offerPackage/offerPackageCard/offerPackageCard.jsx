@@ -125,7 +125,7 @@ const CardButton = styled(Button)`
 
 
 
-const CardPackage = ({data, color, bestSeller, subpage, link, className}) => {
+const OfferPackageCard = ({data, color, bestSeller, subpage, link, className}) => {
     const {name, speed, perks, price} = data;
     return (
         <CardPackageWrapper bestSeller={bestSeller}  className={className} subpage={subpage}>
@@ -161,4 +161,4 @@ const CardPackage = ({data, color, bestSeller, subpage, link, className}) => {
     )
 };
 
-export default CardPackage
+export default OfferPackageCard
