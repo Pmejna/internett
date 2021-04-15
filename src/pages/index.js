@@ -8,7 +8,7 @@ import {mainSlide, mainParagraph, boxSection, mainPageImages} from '../assets/te
 import VerticalSection from "../components/VerticalSection/VerticalSection";
 import Lines01 from "../components/Lines/Lines01";
 import Button from "../components/Button/Button";
-import OfferPackage from '../components/offerPackage/OfferPackage';
+import OfferPackage from '../components/OfferPackage/OfferPackage';
 import AboutSection from "../components/AboutSection/AboutSection";
 
 
