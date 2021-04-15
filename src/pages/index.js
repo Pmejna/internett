@@ -8,7 +8,7 @@ import {mainSlide, mainParagraph, boxSection, mainPageImages} from '../assets/te
 import VerticalSection from "../components/VerticalSection/VerticalSection";
 import Lines01 from "../components/Lines/Lines01";
 import Button from "../components/Button/Button";
-import OfferPackage from '../components/OfferPackage/OfferPackage';
+// import OfferPackage from '../components/OfferPackage1/OfferPackage';
 import AboutSection from "../components/AboutSection/AboutSection";
 
 
@@ -77,7 +77,7 @@ const IndexPage = () => {
           <h2>{boxSection.internetPackages_Data.header}</h2>
           <p>{boxSection.internetPackages_Data.paragraph}</p>
       </SectionText>
-      <OfferPackage />
+      {/* <OfferPackage /> */}
     </SectionPackages>
     <SectionAbout id='onas'>
         <SectionText>
