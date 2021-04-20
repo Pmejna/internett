@@ -5,11 +5,12 @@
  */
 
 // You can delete this file if you're not using it
+
 exports.onCreatePage = ({ page, actions }) => {
-    const { createPage } = actions
-  
+    const { createPage } = actions;
     if (page.path.match(/zasieg/)) {
       page.context.layout = "zasieg"
       createPage(page)
     }
+    ;
   }
