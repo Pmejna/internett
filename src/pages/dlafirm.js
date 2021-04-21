@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import MainSlide from '../components/MainSlide/MainSlide';
 import bgImage from '../assets/images/Firma.jpeg';
 import VerticalSection from '../components/VerticalSection/VerticalSection';
+import CompanyCards from '../components/CompanyCards/CompanyCards';
 import {data} from '../assets/texts/dlaFirmText';
 
 
@@ -27,6 +28,11 @@ const DlaFirm = () => {
             </HeadSection>
             <VerticalSection box_data={data.box_data} />
             <VerticalSection box2_data={data.box2_data}/>
+            <HeadSection>
+                <h2>Oferta internetu dla klientów biznesowych</h2>
+                <p>Dla płynności informacji w firmie oraz między kontrahentami ważna jest bezstresowa oraz niezawodna komunikacja. Aby ta taka była potrzebna jest niezawodna infrastruktura techniczna, która będzie w stanie zapewnić możliwie jak najstabilniejsze łącze do sieci internet.</p>
+            </HeadSection>
+            <CompanyCards />
         </>
     )
 };
