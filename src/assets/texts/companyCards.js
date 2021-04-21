@@ -1,7 +1,7 @@
-import image1 from '../images/companyCard03.jpg';
-import image2 from '../images/companyCard04.jpeg';
-import image3 from '../images/companyCard05.jpeg';
-import image4 from '../images/companyCard01.jpeg';
+import image1 from '../images/CompanyCard03.jpg';
+import image2 from '../images/CompanyCard04.jpeg';
+import image3 from '../images/CompanyCard05.jpeg';
+import image4 from '../images/CompanyCard01.jpeg';
 
 export const content = [
     {
