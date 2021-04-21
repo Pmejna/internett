@@ -1,7 +1,7 @@
 import image1 from '../images/CompanyCard03.jpg';
 import image2 from '../images/CompanyCard04.jpeg';
 import image3 from '../images/CompanyCard05.jpeg';
-import image4 from '../images/CompanyCard01.jpeg';
+import image4 from '../images/Card01.jpeg';
 
 export const content = [
     {
