@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
 
     :root { 
         --main-padding: 1rem 8rem 1rem 8rem;
+        --main-padding-mobile: 8vh 10vw;
         --section-padding: 5rem 10rem 5rem 10rem;
         --main-red: #FB2525;
         --main-dark: rgb(20,20,25);
@@ -48,6 +49,10 @@ const GlobalStyle = createGlobalStyle`
 
         p {
             font-size: 2rem;
+        }
+
+        @media (max-width:900px) {
+            padding: var(--main-padding-mobile);
         }
     }
 

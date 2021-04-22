@@ -20,6 +20,11 @@ const SectionText = styled.div`
     flex-direction: column;
     align-items: center;
     padding: var(--main-padding);
+
+    @media (max-width:900px) {
+      text-align: center;
+      padding: var(--main-padding-mobile);
+    }
 `;
 
 const SectionOffer = styled.section`

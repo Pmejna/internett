@@ -14,7 +14,7 @@ const CompanyCardsWrapper = styled.section`
     background-image: url(${bgImage});
     background-repeat: no-repeat;
     background-position: bottom;
-    padding: 0 300px;
+    padding: 0 300px 3rem;
 
     div:nth-last-of-type(4) {
         grid-area: 2/2/3/3;

@@ -10,6 +10,15 @@ const LinesWrapper = styled.figure`
         width: 100%;
         height: 100%;
     }
+
+    @media (max-width:900px) {
+        object-position: center;
+
+        img {
+            height: 90px;
+            width: auto;
+        }
+    }
 `;
 
 const Lines01 = ({image, alt}) => {

@@ -30,6 +30,10 @@ const NavHorizontalWrapper = styled.nav`
         opacity: 1;
         transform: skewX(0);
     }
+
+    @media (max-width:900px) {
+        padding: 1rem 10vw;
+    }
 `;
 
 const Logo = styled.img`
@@ -66,7 +70,9 @@ const NavHorizontal = ({state, handleMenuClick, clicked, disabled}) => {
 
     return (
         <NavHorizontalWrapper ref={el => navHorizontal = el} className='active' clicked={state.clicked}>
-            <Logo src={logoImg}/>
+            <a href="/">
+                <Logo src={logoImg}/>
+            </a>
             <NavList state={state} linkClicked={handleMenuClick}/>
             <Hamburger disabled={disabled} clicked={clicked} text={state.menuName}/>
         </NavHorizontalWrapper>

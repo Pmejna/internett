@@ -7,6 +7,10 @@ const AboutCardWrapper = styled.div`
     grid-template-rows: 1.4rem 32vh auto;
     box-shadow: var(--main-shadow);
 
+    @media (max-width:900px) {
+        
+    }
+
     .bar {
         background-color: var(--main-dark);
         width: 100%;

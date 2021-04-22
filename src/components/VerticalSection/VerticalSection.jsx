@@ -33,6 +33,10 @@ const VerticalSectionWrapper = styled.section`
 
         }
     }
+
+    @media (max-width:900px) {
+        margin-bottom: 0;
+    }
 `;
 
 
@@ -53,6 +57,25 @@ const VerticalBoxFirst = styled.div`
         
         img {
             
+        }
+    }
+    @media (max-width:900px) {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 320px auto;
+        grid-gap: 2rem;
+
+        figure {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        p {
+            padding: 0;
+        }
+
+        h2 {
+            line-height: 3.8rem;
+            margin-bottom: 3rem;
         }
     }
 `;
@@ -78,6 +101,30 @@ const VerticalBoxSecond = styled.div`
         
         img {
             
+        }
+    }
+
+    @media (max-width:900px) {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 320px auto;
+        grid-gap: 2rem;
+
+        figure {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        p, h2 {
+        text-align: left;
+    }
+
+        p, h2 {
+            padding: 0;
+        }
+
+        h2 {
+            line-height: 3.8rem;
+            margin-bottom: 3rem;
         }
     }
 `;
