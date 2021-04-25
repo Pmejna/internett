@@ -10,6 +10,10 @@ const ContactSection = styled.section`
     h2, p {
         text-align: center;
     }
+    @media (max-width: 780px) {
+        padding: 1rem 10vw 3rem;
+        
+     }
 `;
 
 const ContactFooter = styled.footer`
@@ -26,12 +30,27 @@ const FooterHead = styled.div`
     align-items: center;
     padding: var(--main-padding);
     min-height: 7rem;
+
+    @media (max-width: 780px) {
+        padding: var(--main-padding-mobile);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        flex-wrap: wrap;
+    }
 `;
 
 const Logo = styled.img`
     width: 11rem;
     height: auto;
     background-color: transparent;
+
+    @media (max-width: 780px) {
+        flex-basis: 100%;
+        /* height: 4rem; */
+        width: auto;
+        padding-right: 100px;
+        padding-bottom: 1.4rem;
+    }
 `;
 
 const PhoneNumbers = styled.div`
@@ -46,6 +65,12 @@ const PhoneNumbers = styled.div`
         color: var(--main-dark);
         font-size: 1.8rem;
         font-weight: 500;
+    }
+
+    @media (max-width: 780px) {
+        img {
+            height: 2rem;
+        }
     }
 `;
 
@@ -62,6 +87,13 @@ const FooterData = styled.div`
     padding-top: 3rem;
     background-color: #000;
     color: #fff;
+
+    @media (max-width: 780px) {
+        padding: var(--main-padding-mobile);
+        padding-top: 2.4rem;
+        grid-template-columns: minmax(250px, 350px);
+        grid-template-rows: repeat(4, auto) 80px;
+    }
     
 `;
 
@@ -95,8 +127,11 @@ background-color: #fff;
         p {
             font-weight: 500;
         }
-    }
 
+        @media (max-width: 780px) {
+        padding: 1.4rem 10vw;
+     }
+    }
 `;
 
 const FooterImage = styled.img`

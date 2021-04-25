@@ -10,6 +10,16 @@ const HeadSectionWrapper = styled.section`
     h2,p {
         text-align: center;
     }
+
+    @media (max-width: 780px) {
+        padding: 2rem 10vw;   
+        text-align: left;
+        margin-bottom: 1rem;
+
+        h2,p {
+            text-align: left;
+        }
+    }
 `;
 
 const HeadSection = ({header, paragraph}) => {

@@ -7,30 +7,21 @@ import CompanyCards from '../components/CompanyCards/CompanyCards';
 import {data} from '../assets/texts/dlaFirmText';
 
 
-const HeadSection = styled.section`
-    padding: var(--main-padding);
-    margin-bottom: 4rem;
-    h2 {
-        margin-top: 3rem;
-    }
-    h2,p {
-        text-align: center;
-    }
-`;
+import HeadSection from '../components/HeadSection/HeadSection';
 
 const DlaFirm = () => {
     return (
         <>
             <MainSlide mainText='Internet dla firm' image={bgImage}/>
-            <HeadSection>
-                <h2>Stabilny internet to stabilna firma</h2>
-                <p>Dla płynności informacji w firmie oraz między kontrahentami ważna jest bezstresowa oraz niezawodna komunikacja. Aby ta taka była potrzebna jest niezawodna infrastruktura techniczna, która będzie w stanie zapewnić możliwie jak najstabilniejsze łącze do sieci internet.</p>
+            <HeadSection 
+            header='Stabilny internet to stabilna firma'
+            paragraph='Dla płynności informacji w firmie oraz między kontrahentami ważna jest bezstresowa oraz niezawodna komunikacja. Aby ta taka była potrzebna jest niezawodna infrastruktura techniczna, która będzie w stanie zapewnić możliwie jak najstabilniejsze łącze do sieci internet.'>
             </HeadSection>
             <VerticalSection box_data={data.box_data} />
             <VerticalSection box2_data={data.box2_data}/>
-            <HeadSection>
-                <h2>Oferta internetu dla klientów biznesowych</h2>
-                <p>Dla płynności informacji w firmie oraz między kontrahentami ważna jest bezstresowa oraz niezawodna komunikacja. Aby ta taka była potrzebna jest niezawodna infrastruktura techniczna, która będzie w stanie zapewnić możliwie jak najstabilniejsze łącze do sieci internet.</p>
+            <HeadSection
+                header='Oferta internetu dla klientów biznesowych'
+                paragraph='Dla płynności informacji w firmie oraz między kontrahentami ważna jest bezstresowa oraz niezawodna komunikacja. Aby ta taka była potrzebna jest niezawodna infrastruktura techniczna, która będzie w stanie zapewnić możliwie jak najstabilniejsze łącze do sieci internet.'>
             </HeadSection>
             <CompanyCards />
         </>

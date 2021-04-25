@@ -77,6 +77,26 @@ const MainSlideText = styled.div`
             background-color: var(--main-red);
         }
     }
+    @media (max-width: 780px) {
+        left: 10vw;
+
+        h1 {
+            font-size: 3.2rem;
+            line-height: 3.3rem;
+            /* line-break: anywhere; */
+        }
+
+        p {
+            font-size: 2.4rem;
+            line-height: 2.6rem;
+        }
+        
+        span {
+            font-size: 3rem;
+            margin-top: 0.4rem;
+            display: block;
+        }
+    }
 `;
 
 const MainSlide = ({mainText, subText, buttonText, aboveText, priceText, image, main}) => {

@@ -23,7 +23,7 @@ const SectionText = styled.div`
 
     @media (max-width:900px) {
       text-align: center;
-      padding: var(--main-padding-mobile);
+      padding: 2rem 10vw;
     }
 `;
 
@@ -37,6 +37,11 @@ const SectionOffer = styled.section`
     margin-bottom: 2rem;
   }
   margin: 7rem 0;
+
+  @media (max-width: 780px) {
+        padding: 1.4rem 10vw 3rem;
+        margin: 0;
+     }
 `;
 
 const SectionPackages = styled.section`

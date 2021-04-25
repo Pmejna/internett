@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     }
     html, body {
         overflow-x: hidden;
+        scroll-behavior: smooth;
     }
 
     body {
@@ -53,6 +54,13 @@ const GlobalStyle = createGlobalStyle`
 
         @media (max-width:900px) {
             padding: var(--main-padding-mobile);
+        }
+    }
+
+    @media (max-width: 780px) {
+        h2 {
+            font-size: 2.8rem;
+            line-height: 3.1rem;
         }
     }
 

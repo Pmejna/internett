@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const WioskaPage = () => {
+const MichalowicePage = () => {
     return (
         <>
         </>
     )
 };
 
-export default WioskaPage
+export default MichalowicePage

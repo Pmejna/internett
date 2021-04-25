@@ -17,6 +17,11 @@ const PackageSectionWrapper = styled.section`
     margin-bottom: 2rem;
     background-color: ${({bgColor}) => bgColor ? bgColor : 'transparent'};
     background-image:  ${({bgImage}) => bgImage ? bgImage : null};
+
+    @media (max-width: 780px) {
+        flex-direction: column;   
+        padding: var(--main-padding-mobile);
+    }
     
 `;
 
@@ -28,6 +33,11 @@ const OfferPackageInfo = styled.div`
 
     @media (max-width: 1200px) {
         flex-basis: 50%;
+        min-width: unset;
+    }
+
+    @media (max-width: 780px) {
+        margin: 2rem 0 0;
     }
 `;
 
@@ -46,6 +56,13 @@ const OfferInfoBar = styled.div`
         font-size: 3.2rem;
         color: #fff;
     }
+
+    @media (max-width: 780px) {
+        padding: 1rem 2rem;
+        h3 {
+            font-size: 2rem;
+        }   
+    }
 `;
 
 const OfferInfoText = styled.div`
@@ -53,6 +70,14 @@ const OfferInfoText = styled.div`
     h4 {
         font-size: 2.2rem;
         margin-bottom: 3rem;
+    }
+
+    @media (max-width: 780px) {
+        padding: 1rem 2rem;
+        h4 {
+            margin: 1.4rem 0 1.6rem;
+        }
+
     }
 `;
 

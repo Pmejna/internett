@@ -36,6 +36,7 @@ const VerticalSectionWrapper = styled.section`
 
     @media (max-width:900px) {
         margin-bottom: 0;
+        padding-top: 2rem;
     }
 `;
 

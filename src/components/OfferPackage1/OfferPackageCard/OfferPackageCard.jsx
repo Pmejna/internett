@@ -16,6 +16,11 @@ const CardPackageWrapper = styled.div`
     text-transform: uppercase;
     padding-bottom: 2rem;
     border: ${({bestSeller}) => bestSeller ? '2px solid #2784FE' : 'none'};
+
+    @media (max-width: 780px) {
+        min-width: unset;
+        width: 100%;
+    }   
 `;
 
 const BestsellerLabel = styled.div`

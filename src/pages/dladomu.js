@@ -20,6 +20,14 @@ const HeadSection = styled.section`
     h2,p {
         text-align: center;
     }
+
+    @media (max-width: 780px) {
+        padding: 2rem 10vw;
+
+        h2, p {
+            text-align: left;
+        }
+    }
 `;
 
 const FibreSection = styled.section`
@@ -31,6 +39,12 @@ const FibreSection = styled.section`
     h2 {
         text-align: center;
         padding: var(--main-padding);
+    }
+
+    @media (max-width: 780px) {
+        h2 {
+            padding: 2rem 10vw;
+        }
     }
 `;
 const FibreImageSection = styled.section`
@@ -47,6 +61,14 @@ const FibreImageSection = styled.section`
     p {
         text-align: center;
     }
+
+    @media (max-width: 780px) {
+        min-height: 620px;
+        padding: 2rem 10vw;
+        align-items: flex-start;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
 `;
 
 const BarWrapper = styled.div`
@@ -55,6 +77,12 @@ const BarWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-basis: 500px;
+
+    @media (max-width: 780px) {
+        padding: 1rem 10vw;
+        flex-direction: column;
+        height: 80%;
+    }
 `;
 
 const BarButton = styled(Button)`
@@ -86,6 +114,11 @@ const FibreImageBar = styled.div`
         padding: 0.4rem;
         background-color: var(--main-red);
         color: #fff;
+    }
+
+    @media (max-width: 780px) {
+        padding: 1rem 10vw;
+        min-height: 160px;
     }
 `;
 
