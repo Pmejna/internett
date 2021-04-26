@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'gatsby';
 import styled from 'styled-components';
 import miejscowosci from '../../assets/texts/miejscowosci.json';
 
-console.log(miejscowosci);
 const SearchWrapper = styled.div`
     width: 100%;
     height: 6rem;
@@ -55,7 +55,7 @@ const Search = ({places}) => {
             miejscowosci.map(place => {
                 if (place.place.toLowerCase().match(searchTerm.toLowerCase())) {
                     console.log(place.place.toLowerCase().match(searchTerm));
-                    newTable.push(<a href={`/zasieg/${place.link}`}>{place.place}</a>);
+                    newTable.push(<Link to={`/zasieg/${place.link}`}>{place.place}</Link>);
                 }
             });
             console.log(matchList);
