@@ -3,32 +3,33 @@ import styled from 'styled-components';
 import MainSlide from '../components/MainSlide/MainSlide';
 import VerticalSection from '../components/VerticalSection/VerticalSection';
 import bgImage from '../assets/images/DlaDomu.jpeg';
-import internetTvImage from '../assets/images/InternetTv.jpeg';
 import lines1 from '../assets/images/Group 15.png';
 import Lines01 from "../components/Lines/Lines01";
 import fibreImg from '../assets/images/fibre001.jpeg';
-
+import CompanyCards from '../components/CompanyCards/CompanyCards';
+import {data as dataCompanies}  from '../assets/texts/dlaFirmText';
+import HeadSection from '../components/HeadSection/HeadSection';
 import {data} from '../assets/texts/dlaDomuText';
 import Button from '../components/Button/Button';
 
-const HeadSection = styled.section`
-    padding: var(--main-padding);
-    margin-bottom: 4rem;
-    h2 {
-        margin-top: 3rem;
-    }
-    h2,p {
-        text-align: center;
-    }
+// const HeadSection = styled.section`
+//     padding: var(--main-padding);
+//     margin-bottom: 4rem;
+//     h2 {
+//         margin-top: 3rem;
+//     }
+//     h2,p {
+//         text-align: center;
+//     }
 
-    @media (max-width: 780px) {
-        padding: 2rem 10vw;
+//     @media (max-width: 780px) {
+//         padding: 2rem 10vw;
 
-        h2, p {
-            text-align: left;
-        }
-    }
-`;
+//         h2, p {
+//             text-align: left;
+//         }
+//     }
+// `;
 
 const FibreSection = styled.section`
     width: 100%;
@@ -49,7 +50,7 @@ const FibreSection = styled.section`
 `;
 const FibreImageSection = styled.section`
     width: 100%;
-    min-height: 400px;
+    min-height: 380px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -57,6 +58,7 @@ const FibreImageSection = styled.section`
     background-image: url(${fibreImg});
     background-size: 100%;
     color: #fff;
+    padding-top: 0;
 
     p {
         text-align: center;
@@ -122,47 +124,6 @@ const FibreImageBar = styled.div`
     }
 `;
 
-const TvSection = styled.section`
-
-    margin-top: 5rem;
-
-    p, h2 {
-        text-align: center;
-    }
-
-    figure {
-        width: 100%;
-        height: 30vh;
-        overflow: hidden;
-        object-fit: cover;
-        margin-bottom: 4rem;
-    }
-    img {
-        width: 100%;
-        height: auto;
-    }
-`;
-
-const TvPerks = styled.div`
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 120px);
-    grid-template-rows: 120px;
-    grid-gap: 3rem;
-    justify-content: space-between;
-    margin-top: 4rem;
-`;
-
-const TvPerk = styled.div`
-    margin: 0 auto;
-    line-height: 100%;
-    border: 2px solid var(--main-red);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-`;
 
 
 
@@ -170,11 +131,12 @@ const DlaDomuPage = () => {
     return (
         <>
             <MainSlide mainText='Internet dla domu' image={bgImage}/>
-            <HeadSection>
-                <h2>Internet światłowodowy dla domu</h2>
-                <p>{`Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.`}</p>
-            </HeadSection>
+            <HeadSection
+                header="Internet światłowodowy dla domu i firm"
+                paragraph={`Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.`}
+            />
+            {/* <Lines01 image={lines1} alt="superszybki internet"/> */}
             <FibreSection>
                 <h2>Oferta internetu światłowodowego</h2>
                 <FibreImageSection>
@@ -187,20 +149,13 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
                     </FibreImageBar>
                 </FibreImageSection>
             </FibreSection>
-            <Lines01 image={lines1} alt="superszybki internet"/>
-            <TvSection>
-                <h2>Ofert telewizji internetowej</h2>
-                <figure>
-                    <img src={internetTvImage}></img>
-                </figure>
-                <p>Najwyższa jakość filmów i seriali jest możliwa dzięki bardzo wysokiej prędkości, zatem  możliwości przepustowych sieci, w przypadku pobierania danych. Prędkość internetu światłowodowego wynosi nawet 1 gigabajt na sekundę. Kolejnym bardzo ważnym elementem świadczącym o wysokiej jakości tej technologii jest fakt świadczący o stabilności sieci. </p>
-                <TvPerks>
-                    <TvPerk><p>Korzysc1?</p> </TvPerk>
-                    <TvPerk><p>Korzysc1?</p> </TvPerk>
-                    <TvPerk><p>Korzysc1?</p> </TvPerk>
-                    <TvPerk><p>Korzysc1?</p> </TvPerk>
-                </TvPerks>
-            </TvSection>
+            <HeadSection
+                header='Oferta internetu dla klientów biznesowych'
+                paragraph='Dla płynności informacji w firmie oraz między kontrahentami ważna jest bezstresowa oraz niezawodna komunikacja. Aby ta taka była potrzebna jest niezawodna infrastruktura techniczna, która będzie w stanie zapewnić możliwie jak najstabilniejsze łącze do sieci internet.'>
+            </HeadSection>
+            {/* <VerticalSection box_data={dataCompanies.box_data} />
+            <VerticalSection box2_data={dataCompanies.box2_data}/> */}
+            <CompanyCards />
         </>
     )
 };

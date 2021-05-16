@@ -36,6 +36,9 @@ const GlobalStyle = createGlobalStyle`
         font-size: 3.6rem;
         margin-bottom: 1.2rem;
     }
+    h4 {
+        font-size: 2rem
+    }
 
     p, a {
         font-size: 1.5rem;

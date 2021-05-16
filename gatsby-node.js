@@ -20,15 +20,20 @@ exports.onCreatePage = ({ page, actions }) => {
 exports.createPages = ({actions}) => {
   const {createPage} = actions;
   const placeTemplate = path.resolve(`./src/layouts/place.js`);
-  console.log(placeData);
   placeData.forEach(place => {
     createPage({
       path: `/zasieg/${place.link}`,
       component: placeTemplate,
       context: {
+        layout: "zasieg",
         place: place.place,
-        swiatlowod: place.swiatlowod
-      }
+        textMain: place.textMain,
+        textPackages: place.textPackages,
+        textPackage1: place.textPackage1,
+        textPackage2: place.textPackage2,
+        textPackage3: place.textPackage3,
+        textContact: place.textContact
+      },
     })
   })
 }

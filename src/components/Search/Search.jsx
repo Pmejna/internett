@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import miejscowosci from '../../assets/texts/miejscowosci.json';
@@ -10,11 +10,13 @@ const SearchWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3rem;
+    padding: var(--main-padding);
+    margin-top: 3rem;
     background-color: var(--main-red);
     position: relative;
 
     input {
+        min-width: 300px;
         display: block;
         border: 0 transparent;
         border-radius: 0.4rem;
@@ -25,6 +27,17 @@ const SearchWrapper = styled.div`
         color: #fff;
         font-size: 1.3rem;
         text-transform: uppercase;
+    }
+
+    @media (max-width: 760px) {
+        height: unset;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 2rem 10vw;
+
+        h3 {
+            text-align: left;
+        }
     }
 `;
 
@@ -38,42 +51,96 @@ const SearchBox = styled.div`
     background: white;
     border: 2px solid var(--main-red);
 
+
+    a {
+        text-decoration: none;
+        color: var(--main-dark);
+    }
+    li {
+        max-width: 300px;
+
+    }
+    li:hover {
+        cursor: pointer;
+        a { 
+            font-size: 2.1rem;
+        }
+    }
+    a:hover {
+        transform: scale(1.5);
+    }
+    ul {
+        padding: var(--main-padding);
+        list-style: none;
+    }
+
+    @media (max-width: 760px) {
+        font-size: 2.4rem;
+        padding: none;
+
+       ul { padding: 2rem 10vw;
+       }
+       a {
+           font-size: 2rem;
+       }
+     }
+
 `;
 
 
 const Search = ({places}) => {
-    const [state, setState] = useState({data: []});
+    const [matchList, setMatchList] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
+    const [isActive, setIsActive] = useState(false);
+
+    let searchField = useRef(null);
+
     const handleSearch = (e) => {
         setSearchTerm(e.target.value);
     };
-    const [matchList, setMatchList] = useState([]);
+
     const handleList = (searchTerm) => {
         if (searchTerm !== '') {
-            console.log(searchTerm);
             const newTable = [];
             miejscowosci.map(place => {
                 if (place.place.toLowerCase().match(searchTerm.toLowerCase())) {
                     console.log(place.place.toLowerCase().match(searchTerm));
-                    newTable.push(<Link to={`/zasieg/${place.link}`}>{place.place}</Link>);
+                    newTable.push(<li key={place.link}><Link to={`/zasieg/${place.link}`}>{place.place}</Link></li>);
                 }
             });
-            console.log(matchList);
             setMatchList(newTable);
-        }         
-    }
+        }
+        
+        else {
+            setMatchList([]);
+        }
+    };
+
+    // const handleIsFocused = () => {
+    //     setIsActive(true)
+    //     console.log('focused');
+    //     console.log(isActive);
+    // };
+    // const handleIsUnFocused = () => {
+    //     setIsActive(false);
+    //     setSearchTerm('');
+    //     console.log('unfocused');
+    // };
 
     useEffect(() => {
         handleList(searchTerm);
     }, [searchTerm]);
 
     return (
-        <SearchWrapper state={state} searchTerm={searchTerm} places={miejscowosci}>
-            <input type="text" placeholder="Wyszukaj..." onChange={handleSearch}></input>
+        <SearchWrapper searchTerm={searchTerm} places={miejscowosci}>
+            <input type="text" placeholder="Wyszukaj..." onChange={handleSearch} ref={el => searchField = el}></input>
             <h3>Wyszukiwarka zasięgu</h3>
             <SearchBox>
                 {searchTerm.length > 0 ? 
-                matchList : null}
+                <ul>
+                    {matchList}
+                </ul>
+                 : null}
             </SearchBox>
         </SearchWrapper>
     )

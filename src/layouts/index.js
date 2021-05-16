@@ -11,25 +11,20 @@ import Search from '../components/Search/Search';
 
 const MainContent = styled.main`
   /* margin-top: var(--nav-height); */
-  visibility: hidden;
 `;
 
 
 
-const AlternativeLayout = ({children}) => {
+const AlternativeLayout = ({pageContext, children}) => {
   let app = useRef(null);
-
-  useEffect(() => {
-    TweenMax.to(app, 0, {css: {visibility: 'visible'}})
-  })
+  console.log(pageContext);
   return (
   <>
     <GlobalStyles />
     <Navigation />
-    <MainContent ref={el => app = el}>
+    <MainContent>
       {children}  
-    <Search />
-    <Contact />
+    <Contact zasieg={true}/>
     </MainContent>
   </>
 )};

@@ -57,18 +57,23 @@ const NavList = ({state, linkClicked, responsive}) => {
                              linkClicked={linkClicked}
                              ref={el2 => (line2 = el2)}
                              />
-                        <NavItem path="/pakiety"
-                             text="Pakiety" 
+                        <NavItem path="/dladomuifirm"
+                             text="Oferta dla domu i firm" 
                              linkClicked={linkClicked}
                              ref={el3 => (line3 = el3)}
                              />
-                        <NavItem path="/dladomu"
-                             text="Oferta dla domu" 
+                        {/* <NavItem path="/dlafirm"
+                             text="Oferta dla firm" 
+                             linkClicked={linkClicked}
+                             ref={el5 => (line5 = el5)}
+                             /> */}
+                        <NavItem path="/telewizja"
+                             text="Telewizja" 
                              linkClicked={linkClicked}
                              ref={el4 => (line4 = el4)}
                              />
-                        <NavItem path="/dlafirm"
-                             text="Oferta dla firm" 
+                        <NavItem path="/pakiety"
+                             text="Pakiety" 
                              linkClicked={linkClicked}
                              ref={el5 => (line5 = el5)}
                              />

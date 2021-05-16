@@ -1,82 +1,13 @@
 [
-    {
-        "place": "Sękocin stary",
+    {   
+        "place": "Stefanowo",
         "link": "sekocinstary",
-        "swiatlowod": "Tak",
-        "tekst": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-        "rzecz2": "Lorem ipsum",
-        "rzecz3": "Lorem ipsum"
-    },
-    {
-        "place": "Janki",
-        "link": "janki",
-        "swiatlowod": "Tak",
-        "tekst": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-        "rzecz2": "Lorem ipsum",
-        "rzecz3": "Lorem ipsum"
-    },
-    {
-        "place": "Wolica",
-        "link": "wolica",
-        "swiatlowod": "Tak",
-        "tekst": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-        "rzecz2": "Lorem ipsum",
-        "rzecz3": "Lorem ipsum"
-    },
-    {
-        "place": "Raszyn",
-        "link": "raszyn",
-        "swiatlowod": "Tak",
-        "tekst": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-        "rzecz2": "Lorem ipsum",
-        "rzecz3": "Lorem ipsum"
-    },
-    {
-        "place": "Łazy",
-        "link": "lazy",
-        "swiatlowod": "Tak",
-        "tekst": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-        "rzecz2": "Lorem ipsum",
-        "rzecz3": "Lorem ipsum"
-    },
-    {
-        "place": "Magdalenka",
-        "link": "magdalenka",
-        "swiatlowod": "Tak",
-        "tekst": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-        "rzecz2": "Lorem ipsum",
-        "rzecz3": "Lorem ipsum"
-    },
-    {
-        "place": "Michałowice",
-        "link": "michalowice",
-        "swiatlowod": "Tak",
-        "tekst": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-        "rzecz2": "Lorem ipsum",
-        "rzecz3": "Lorem ipsum"
-    },
-    {
-        "place": "Opacz mała",
-        "link": "opaczmala",
-        "swiatlowod": "Tak",
-        "tekst": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-        "rzecz2": "Lorem ipsum",
-        "rzecz3": "Lorem ipsum"
-    },
-    {
-        "place": "Mroków",
-        "link": "mrokow",
-        "swiatlowod": "Tak",
-        "tekst": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-        "rzecz2": "Lorem ipsum",
-        "rzecz3": "Lorem ipsum"
-    },
-    {
-        "place": "Marysin",
-        "link": "marysin",
-        "swiatlowod": "Tak",
-        "tekst": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.",
-        "rzecz2": "Lorem ipsum",
-        "rzecz3": "Lorem ipsum"
+        "textMain": "Internet światłowodowy w Stefanowie? Czemu nie? Nieustannie zmieniające się możliwości techniczne dają nam taką sposobność. Co najważniejsze, nie musi być drogo. Chcesz doprowadzić internet światłowodowy do Twojego domu? Zostań naszym klientem i przekonaj się, jakie możliwości da ci użytkowanie takiego łącza internetowego. Poznaj nowy wymiar cyfrowego internetu, dostarczanego poprzez zaawansowane technologicznie łącze optyczne. Stabilne i bezpieczne, niezależnie od warunków pogodowych.",
+        "textPackages": "Gospodarstwo domowe lub biznes, który znajduje się w miejscowości Stefanowo? Nasza oferta usatysfakcjonuje osoby korzystające z internetu w domu, biurze czy pracowni. Różni klienci mają różne potrzeby. Rozumiemy to, dlatego nasza firma oferuje trzy różne pakiety internetu światłowodowego w miejscowości Stefanowo. Potrzebujesz dostępu do internetu, ale nie jesteś pewien, jakie dokładnie powinny być jego parametry? Zapoznaj się z prezentowanymi poniżej opisami każdego z oferowanych pakietów, klikając w odpowiedni rozszerzenie sekcji.",
+        "textPackage1": "Pakiet lekki to wariant oferty kierowany do użytkowników, którzy nie spędzają w internecie większości swojego czasu. Pakiet lekki internetu światłowodowego w Stefanowie spełni najprostsze potrzeby takich właśnie osób. Klienci, którzy cenią sobie komfort korzystania z łącza światłowodowego przy jednoczesnym ograniczeniu ponoszonych kosztów, powinny wybrać właśnie tę usługę. Przygotowana przez naszą firmę propozycja będzie dla nich idealnym rozwiązaniem. Zadzwoń umów spotkanie z naszymi wyspecjalizowanymi monterami. Jeśli wybierzesz naszą ofertę, korzystanie z internetu nigdy już nie będzie takie samo.",
+        "textPackage2": "Używając internetu codziennie do różnych celów, angażujesz połączenie wielowymiarowo na różne treści. Korzystanie z platform streamingowych, przeglądanie zawartości serwisów, lekcje i konferencje on-line. Rozrywka w postaci gier i treści multimedialnych. Kilka osób korzystających z połączenia jednocześnie. Stabilny i bezproblemowy transfer danych bez opóźnień i problemów technicznych. Wszystko to możliwe dzięki pakietowi standard oferowanemu przez naszą firmę. Doprowadzimy internet światłowodowy w Stefanowie bezpośrednio do Twojego domu. Szybko, sprawnie, z dbałością o każdy szczegół. Jeśli chcesz stać się posiadaczem najlepszego internetu światłowodowego w Stefanowie, zadzwoń do nas i wybierz korzystną ofertę w pakiecie standard.",
+        "textPackage3": "Pracujesz on-line, wiec jesteś w ciągłym kontakcie ze swoimi klientami i współpracownikami. Regularnie przesyłasz i odbierasz ogromne pliki, odbywasz wideokonferencje lub korzystasz z materiałów specjalizacyjnych. Internet jest twoim podstawowym narzędziem. Posiadasz biuro w Stefanowie lub prowadzisz działalność z własnego domu na jego terenie. Pakiet Ultra zapewni Ci najszybszy transfer, bezpieczeństwo przesyłanych informacji oraz komfort, jaki dać może tylko i wyłącznie internet światłowodowy. W pewnych kwestiach nie ma miejsca na półśrodki i wątpliwości. Oferowana przez nas usługa zaspokoi wszystkie twoje potrzeby.",
+        "textContact": "Skontaktuj się z nami, aby już teraz umówić się na montaż internetu światłowodowego w Stefanowie. Nasi fachowcy zjawią się w twoim domu i dokonają instalacji niezbędnych komponentów w sposób szybki, fachowy i bezpieczny. Tobie pozostanie cieszyć się wysoką jakością oferowanej przez nas usługi. Internet na miarę dwudziestego pierwszego wieku już od dziś w twoim domu.",
+        "textmeta": "Doprowadzamy internet światłowodowy do gospodarstw domowych w miejscowości Stefanowo. Solidnie, szybko i w dobrej cenie."
     }
 ]
