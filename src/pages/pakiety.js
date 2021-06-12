@@ -46,8 +46,8 @@ const packageText = {
             ograniczonym spędzonym czasie przed komputerem. Pakiet dla ludzi, dla których internet jest
             dodatkiem i formą pozyskiwania informacji.`
         },
-    ultra: {
-        name: 'ultra',
+    premium: {
+        name: 'premium',
         speed: '250',
         perks: [
             {key: '001c', text: 'brak limitu danych'},
@@ -74,7 +74,7 @@ const PakietyPage = () => {
         <HeadSection header={headerText} paragraph={paragraphText}/>
         <PackageSection data={packageText.lekki} color='#a1a1a1'/>
         <PackageSection data={packageText.standard} color='#2784FE' bgColor='#F1F1F1'/>
-        <PackageSection data={packageText.ultra}/>
+        <PackageSection data={packageText.premium}/>
     </>
     )
 };

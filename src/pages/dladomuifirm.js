@@ -137,6 +137,13 @@ const DlaDomuPage = () => {
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.`}
             />
             {/* <Lines01 image={lines1} alt="superszybki internet"/> */}
+            <HeadSection
+                header='Oferta internetu dla klientów biznesowych'
+                paragraph='Dla płynności informacji w firmie oraz między kontrahentami ważna jest bezstresowa oraz niezawodna komunikacja. Aby ta taka była potrzebna jest niezawodna infrastruktura techniczna, która będzie w stanie zapewnić możliwie jak najstabilniejsze łącze do sieci internet.'>
+            </HeadSection>
+            {/* <VerticalSection box_data={dataCompanies.box_data} />
+            <VerticalSection box2_data={dataCompanies.box2_data}/> */}
+            <CompanyCards />
             <FibreSection>
                 <h2>Oferta internetu światłowodowego</h2>
                 <FibreImageSection>
@@ -149,13 +156,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
                     </FibreImageBar>
                 </FibreImageSection>
             </FibreSection>
-            <HeadSection
-                header='Oferta internetu dla klientów biznesowych'
-                paragraph='Dla płynności informacji w firmie oraz między kontrahentami ważna jest bezstresowa oraz niezawodna komunikacja. Aby ta taka była potrzebna jest niezawodna infrastruktura techniczna, która będzie w stanie zapewnić możliwie jak najstabilniejsze łącze do sieci internet.'>
-            </HeadSection>
-            {/* <VerticalSection box_data={dataCompanies.box_data} />
-            <VerticalSection box2_data={dataCompanies.box2_data}/> */}
-            <CompanyCards />
         </>
     )
 };

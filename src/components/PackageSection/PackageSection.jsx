@@ -32,7 +32,7 @@ const OfferPackageInfo = styled.div`
     margin-left: 2rem;
 
     @media (max-width: 1200px) {
-        flex-basis: 50%;
+        flex-basis: 70%;
         min-width: unset;
     }
 
@@ -83,6 +83,10 @@ const OfferInfoText = styled.div`
 
 const OfferPackageCardStyled = styled(OfferPackageCard)`
     margin: 0;
+    @media (max-width: 1000px) {
+        flex-basis: 100%;
+        max-width: none;
+    }
 `;
 
 

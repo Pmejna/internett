@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../../Button/Button';
+import tickIcon from '../../../assets/images/tick.svg';
 
 const CardPackageWrapper = styled.div`
     background-color: #fff;
     box-shadow: var(--main-shadow);
-    min-height: ${({bestSeller}) => bestSeller ? '584px' : '540px'};
+    min-height: ${({bestSeller}) => bestSeller ? '484px' : '440px'};
     min-height: ${({subpage}) => subpage ? '400px' : null};
-    min-width: 300px;
-    max-width: 350px;
+    min-width: 200px;
+    max-width: ${({bestSeller}) => bestSeller ? '280px' : '250px'};
     margin: ${({bestSeller}) => bestSeller ? '0 0' : '40px 0'};
     display: flex;
     flex-direction: column;
@@ -16,6 +17,27 @@ const CardPackageWrapper = styled.div`
     text-transform: uppercase;
     padding-bottom: 2rem;
     border: ${({bestSeller}) => bestSeller ? '2px solid #2784FE' : 'none'};
+    .perk {
+        position: relative;
+        width: 2.4rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -3rem;
+            top: 0;
+            /* transform: translateY(50%); */
+            background-image: url(${tickIcon});
+            background-repeat: no-repeat;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    @media (max-width: 1120px) {
+        min-width: unset;
+        max-width: 310px;
+    }
 
     @media (max-width: 780px) {
         min-width: unset;
@@ -151,7 +173,7 @@ const OfferPackageCard = ({data, color, bestSeller, subpage, link, className}) =
                     <p>prędkość:<span>{speed}MB/S</span></p>
                 </PackageSpeed>
                 <PackagePerk>
-                    {perks.map(perk => <p key={perk.key}>{perk.text}</p>)}
+                    {perks.map(perk => <p key={perk.key}><span className="perk"></span>{perk.text}</p>)}
                 </PackagePerk>
             </CardPackageInfo>
             <PackagePrice>

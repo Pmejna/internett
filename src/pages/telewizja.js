@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import bgImage from "../assets/images/tv001.jpeg";
 import MainSlide from '../components/MainSlide/MainSlide';
 import internetTvImage from '../assets/images/InternetTv.jpeg';
+import TvPackagesSection from '../components/TvPackagesSection/TvPackagesSection';
+import {tvPackagesData as data} from '../assets/texts/tvCards';
+import {tvPremiumData as data2} from '../assets/texts/tvCards';
 
 const TvSection = styled.section`
 
@@ -46,8 +49,23 @@ const TvPerk = styled.div`
     padding: 2rem;
 `;
 
-// import 
+const TvPremiumBar = styled.section`
+    min-height: 130px;
+    width: 100vw;
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #2579F9; */
+    h3 {
+        text-align: center;
+        font-size: 3rem;
+        color: #fff;
+    }
+`;
+
 const OnasPage = () => {
+    console.log(data);
     return (
     <>
         <MainSlide mainText='Telewizja' image={bgImage}/>
@@ -57,13 +75,13 @@ const OnasPage = () => {
                     <img src={internetTvImage}></img>
                 </figure>
                 <p>Najwyższa jakość filmów i seriali jest możliwa dzięki bardzo wysokiej prędkości, zatem  możliwości przepustowych sieci, w przypadku pobierania danych. Prędkość internetu światłowodowego wynosi nawet 1 gigabajt na sekundę. Kolejnym bardzo ważnym elementem świadczącym o wysokiej jakości tej technologii jest fakt świadczący o stabilności sieci. </p>
-                <TvPerks>
-                    <TvPerk><p>Korzysc1?</p> </TvPerk>
-                    <TvPerk><p>Korzysc1?</p> </TvPerk>
-                    <TvPerk><p>Korzysc1?</p> </TvPerk>
-                    <TvPerk><p>Korzysc1?</p> </TvPerk>
-                </TvPerks>
-            </TvSection>
+        </TvSection>
+        <TvPackagesSection data={data}/>
+        <TvPremiumBar>
+            <h3>Pakiety Premium do wyboru tylko razem z OPTIMUM lub PLATINUM:</h3>
+        </TvPremiumBar>
+        <TvPackagesSection optional data={data2}/>
+        
     </>
     )
 };

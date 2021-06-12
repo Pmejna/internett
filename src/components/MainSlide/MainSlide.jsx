@@ -10,6 +10,10 @@ const MainSlideWrapper = styled.section`
     height: ${({main}) => main ? '100vh' : '70vh'};
     position: relative;
     overflow: hidden;
+
+    @media (max-width: 768px) {
+        height: ${({main}) => main ? '100vh' : '40vh'};
+    }
 `;
 
 const MainSlideImage = styled.img`

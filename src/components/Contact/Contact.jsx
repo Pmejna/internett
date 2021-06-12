@@ -48,13 +48,14 @@ const Logo = styled.img`
         flex-basis: 100%;
         /* height: 4rem; */
         width: auto;
+        height: 5rem;
         padding-right: 100px;
         padding-bottom: 1.4rem;
     }
 `;
 
 const PhoneNumbers = styled.div`
-    width: 320px;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,8 +64,9 @@ const PhoneNumbers = styled.div`
     a {
         text-decoration: none;
         color: var(--main-dark);
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         font-weight: 500;
+        margin-left: 2rem;
     }
 
     @media (max-width: 780px) {
@@ -141,8 +143,7 @@ const FooterImage = styled.img`
 `;
 
 const Contact = ({zasieg}) => {
-    const today = new Date().getFullYear();
-    console.log(today);
+
     return (
         <>  
         {
@@ -157,8 +158,7 @@ const Contact = ({zasieg}) => {
                     <Logo src={logoImg}/>
                     <PhoneNumbers>
                         <img src={phoneIcon} alt=""/>
-                        <a href="+44774564634">0774 564 634</a>
-                        <a href="+44774564634">0774 564 634</a>
+                        <a href="tel:+44774564634">0774 564 634</a>
                     </PhoneNumbers>
                 </FooterHead>
                 <FooterData>
@@ -185,7 +185,7 @@ const Contact = ({zasieg}) => {
                 <Footer>
                     <div className="redBar"></div>
                     <div className="footer">
-                        <p className="copyright">Copyright {today}</p>
+                        <p className="copyright">Copyright 2021</p>
                         <p>www.internett.pl</p>
                     </div>
                 </Footer>

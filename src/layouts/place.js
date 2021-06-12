@@ -22,6 +22,11 @@ const PlaceWrapper = styled.section`
     border-top: solid 2px red;
     border-bottom: solid 2px red;
 `;
+const MainImage = styled.div`
+    width: 100vw;
+    height: 70vh;
+
+`;
 
 const PlaceTextElement = styled.div`
 
@@ -40,7 +45,9 @@ const Place = ({pageContext}) => {
         <>
             <MainContent>
             <MainSlide mainText={`Internet światłowodowy ${pageContext.place}`} image={bgImage}/>
-            <Search />
+                <MainImage>
+                    <iframe src="https://www.google.com/maps/d/u/7/embed?mid=1q4OZkUGExZT9NHAGoYcZFLtIiZ5M2gF2" width="640" height="480"></iframe>
+                </MainImage>
                 <PlaceWrapper>
                 <PlaceTextElement>
                     <p>{pageContext.textMain}</p>
@@ -51,7 +58,8 @@ const Place = ({pageContext}) => {
                 </PlaceTextElement>
                 <h3>{pageContext.swiatlowod}</h3>
                 <p>{pageContext.text}</p>
-                </PlaceWrapper>  
+                </PlaceWrapper> 
+                <Search /> 
                 {pageContext.place ? 
                 <PlaceContact>
                     <h4>Kontakt – Internet Światłowodowy {pageContext.place}</h4>
