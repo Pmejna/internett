@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import miejscowosci from '../../assets/texts/miejscowosci.json';
 
 const SearchWrapper = styled.div`
-    width: 100%;
+    margin: 3rem 5vw 2rem;
     height: 6rem;
     display: flex;
     flex-direction: row;

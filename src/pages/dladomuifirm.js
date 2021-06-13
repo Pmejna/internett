@@ -133,8 +133,15 @@ const DlaDomuPage = () => {
             <MainSlide mainText='Internet dla domu i firm' image={bgImage}/>
             <HeadSection
                 header="Internet światłowodowy dla domu"
-                paragraph={`Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.`}
+                paragraph={`Polecamy współpracę z naszą firmą w celu bezpośredniego połączenia Twojej prywatnej posiadłości
+                do naszej sieci. Jeśli szykujesz budowę, lub Twój dom stoi już w wymarzonej lokalizacji,
+                skontaktuj się z naszym działem handlowym aby uzyskać wszystkie najważniejsze informacje na
+                temat możliwości jakie oferuje nasza firma. Po określeniu dokładnej lokalizacji Twojej inwestycji
+                obliczmy koszt oraz zaproponujemy najwygodniejsze i najmniej inwazyjne rozwiązania budowy
+                architektury sieci. Prowadzimy pełne prace budowlane, monterskie i techniczne.
+                Tworząc własną sieć, dlatego jesteśmy pewni o jej niezawodności i wysokiej jakości dostarczanego
+                łącza internetowego. Postaw na współpracę z lokalnym polskim dostawcą aby mieć pewność
+                o profesjonalnym i osobistym podejściu do klienta.`}
             />
             {/* <Lines01 image={lines1} alt="superszybki internet"/> */}
             <HeadSection

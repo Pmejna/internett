@@ -52,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
         padding: var(--section-padding);
 
         p {
-            font-size: 2rem;
+            font-size: 1.7rem;
         }
 
         @media (max-width:900px) {

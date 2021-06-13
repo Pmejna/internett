@@ -1,60 +1,52 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '../../Button/Button';
 
 const CardPackageWrapper = styled.div`
     background-color: #fff;
     box-shadow: var(--main-shadow);
-    min-height: ${({bestSeller}) => bestSeller ? '484px' : '440px'};
-    min-height: ${({subpage}) => subpage ? '400px' : null};
-    min-width: 200px;
-    max-width: ${({bestSeller}) => bestSeller ? '280px' : '250px'};
-    margin: ${({bestSeller}) => bestSeller ? '0 0' : '40px 0'};
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    text-transform: uppercase;
     padding-bottom: 2rem;
-    border: ${({bestSeller}) => bestSeller ? '2px solid #2784FE' : 'none'};
+    margin: 5rem 0;
+    max-width: 1400px;
+    p {
+        font-size: 1.4rem;
+    }
 
     @media (max-width: 1120px) {
-        min-width: unset;
-        max-width: 310px;
+
     }
 
     @media (max-width: 780px) {
-        min-width: unset;
-        width: 100%;
+
     }   
 `;
 
-const BestsellerLabel = styled.div`
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    margin-bottom: 1rem;
-    text-align: center;
-    padding: 0.2rem 0;
-
-`;
-
 const CardPackageLabel = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 0 2rem 0;
-    height: ${({bestSeller}) => bestSeller ? '10rem' : '8rem'};
+    height: 8rem;
     background-color: ${({color}) => color ? color : 'var(--main-red)'};
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (max-width: 780px) {
+        height: auto;
+        padding: 2rem;
+
+        h3 {
+
+        font-size: 1.3rem;
+        }
+    }   
+
     h3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        font-size: 2.2rem;
+        padding-left: 3rem;
+        color: #fff;
 
         span {
             font-weight: 300;
-            font-size: 1.2rem;
             color: #fff;
             text-transform: uppercase;
         }
@@ -66,33 +58,33 @@ const CardPackageLabel = styled.div`
 `;
 
 const CardPackageInfo = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
 
-    flex-basis: ${({subpage}) => subpage ? '80%' : '50%'};
-    min-height: ${({subpage}) => subpage ? '150px' : null};
-    p {
-        text-align: center;
+    div {
+        font-size: 1.6rem;
     }
+    @media (max-width: 780px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
 `;
 
 const PackageSpeed = styled.div`
-    background-color: #F1F1F1;
-    
     p {
-        padding: 0.6rem 0;
-        font-weight: 300;
+    font-size: 1.8rem;        
     }
+    @media (max-width: 780px) {
+        p {
+        font-size: 2rem;
+        align-items: center;
+        }
+    }   
 
-    span {
-        margin-left: 2rem;
-        font-weight: 700;
-    }
-`;
-
-const PackagePerk = styled.div`
-    min-height: 103px;
-    p {
-        font-size: 1.4rem;
-    }
 `;
 
 const  PackagePrice = styled.div`
@@ -106,6 +98,7 @@ const  PackagePrice = styled.div`
         font-weight: 300;
         font-size: 4rem;
         line-height: 4rem;
+        color: #27CC00;
    }
 
     .from {
@@ -114,61 +107,44 @@ const  PackagePrice = styled.div`
         bottom: -1rem;
         font-size: 1.3rem;
         text-transform: capitalize;
+        color: #000;
     }
-`;
 
-const CardButton = styled(Button)`
-   
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-color: transparent;
-
-    a {
-        max-width: 220px;
-        background-color: #000;
-        color: #fff;
-        text-decoration: none;
-    }
-    
+    @media (max-width: 780px) {
+        flex-basis: 100%;
+        margin-top: 1.5rem;
+    }   
 `;
 
 
+const CardPackageParagraph = styled.div`
+    padding: 3rem;
+`;
 
-const PackageUniversalCard = ({data, color, bestSeller, subpage, link, className}) => {
-    const {name, speed, perks, price} = data;
+
+const PackageUniversalCard = ({place, color, speed, price, text, packageName, className}) => {
     return (
-        <CardPackageWrapper bestSeller={bestSeller}  className={className} subpage={subpage}>
-            <CardPackageLabel color={color} bestSeller={bestSeller}>
-            {
-                bestSeller ? 
-                <BestsellerLabel>najczęściej wybierany</BestsellerLabel>
-                :
-                null
-            }
+        <CardPackageWrapper className={className}>
+            <CardPackageLabel color={color}>
                 <h3>
-                    <span>Internet światłowodowy</span>
-                    <span className="bigFont">pakiet {name}</span> 
+                    Internet Światłowodowy {place} - pakiet {packageName}
                 </h3>
             </CardPackageLabel>
-            <CardPackageInfo subpage={subpage}>
+            <CardPackageInfo>
                 <PackageSpeed>
-                    <p>prędkość:<span>{speed}MB/S</span></p>
+                    <p>Prędkość: <b>{speed}</b></p>
                 </PackageSpeed>
-                <PackagePerk>
-                    {perks.map(perk => <p key={perk.key}>{perk.text}</p>)}
-                </PackagePerk>
-            </CardPackageInfo>
-            <PackagePrice>
-                    <div className='price'>{price}zł<span className='from'>Od</span></div>
-                    <span>miesięcznie</span>
+                <div>Brak limitu danych</div>
+                <PackagePrice>
+                        <div className='price'>{price}zł<span className='from'>Od</span></div>
+                        <span>miesięcznie</span>
                 </PackagePrice>
-                {
-                    subpage ? null : 
-                    <CardButton className='button' link={link}></CardButton>
-                }
+            </CardPackageInfo>
+            <CardPackageParagraph>
+                <p>{text}</p>
+            </CardPackageParagraph>
         </CardPackageWrapper>
     )
 };
 
-export default OfferPackageCard
+export default PackageUniversalCard

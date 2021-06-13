@@ -8,10 +8,14 @@ import SEO from "../components/seo";
 
 import Contact from '../components/Contact/Contact';
 import Search from '../components/Search/Search';
+import Arrow from '../components/Arrow/Arrow';
 
 const MainContent = styled.main`
   /* margin-top: var(--nav-height); */
+  position: relative;
 `;
+
+
 
 
 
@@ -25,6 +29,7 @@ const AlternativeLayout = ({pageContext, children}) => {
     <MainContent>
       {children}  
     <Contact zasieg={true}/>
+    <Arrow />
     </MainContent>
   </>
 )};
@@ -41,8 +46,9 @@ const MainLayout = ({children}) => {
     <GlobalStyles />
     <Navigation />
     <MainContent ref={el => app = el}>
-      {children}  
+      {children}
     <Contact />
+    <Arrow />
     </MainContent>
   </>
 )};
