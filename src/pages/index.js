@@ -54,10 +54,6 @@ const SectionPackages = styled.section`
   }
 `;
 
-const SectionAbout = styled.section`
-  padding: 0;
-`;
-
 const IndexPage = () => { 
   const {mainText, subText, priceText, buttonText, aboveText} = mainSlide;
   return (
@@ -89,13 +85,6 @@ const IndexPage = () => {
       </SectionText>
       <OfferPackage />
     </SectionPackages>
-    <SectionAbout id='onas'>
-        <SectionText>
-          <h2>{boxSection.about_data.header}</h2>
-          <p>{boxSection.about_data.paragraph}</p>
-        </SectionText>
-        <AboutSection data={boxSection.about_data.cards}/>
-    </SectionAbout>
   </>
 )
   }

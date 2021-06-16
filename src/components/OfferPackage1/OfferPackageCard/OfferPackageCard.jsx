@@ -170,7 +170,7 @@ const OfferPackageCard = ({data, color, bestSeller, subpage, link, className}) =
             </CardPackageLabel>
             <CardPackageInfo subpage={subpage}>
                 <PackageSpeed>
-                    <p>prędkość:<span>{speed}MB/S</span></p>
+                    <p>prędkość:<span>{speed}Mbit/S</span></p>
                 </PackageSpeed>
                 <PackagePerk>
                     {perks.map(perk => <p key={perk.key}><span className="perk"></span>{perk.text}</p>)}
