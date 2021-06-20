@@ -4,7 +4,6 @@ import {TweenMax} from 'gsap';
 
 import Navigation from '../components/Navigation/Navigation';
 import GlobalStyles from '../assets/styles/globalStyles';
-import SEO from "../components/seo";
 
 import Contact from '../components/Contact/Contact';
 import Search from '../components/Search/Search';

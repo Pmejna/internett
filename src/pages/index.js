@@ -2,9 +2,10 @@ import React from "react"
 import styled from 'styled-components';
 
 import MainSlide from "../components/MainSlide/MainSlide";
-import SEO from "../components/seo";
+import PageSEO from "../components/PageSEO";
 
 import {mainSlide, mainParagraph, boxSection, mainPageImages} from '../assets/texts/mainpage';
+import {indexSeo} from '../assets/texts/seoText';
 import VerticalSection from "../components/VerticalSection/VerticalSection";
 import Lines01 from "../components/Lines/Lines01";
 import Button from "../components/Button/Button";
@@ -58,6 +59,7 @@ const IndexPage = () => {
   const {mainText, subText, priceText, buttonText, aboveText} = mainSlide;
   return (
   <>
+    <PageSEO description={indexSeo.description} title={indexSeo.title}/>
     <MainSlide 
       mainText={mainText} 
       subText={subText} 

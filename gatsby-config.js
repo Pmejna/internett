@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Lokalny dostawca internetu światłowodowego na terenach powiatów pruszkowskiego, grodziskiego oraz nadarzyńskiego. Doprowadzenie szybkiego internetuświatłowodowego bezpośrednio do Twojego domu.`,
+    author: `pmejna@gmail.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

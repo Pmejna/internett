@@ -11,6 +11,8 @@ import {data as dataCompanies}  from '../assets/texts/dlaFirmText';
 import HeadSection from '../components/HeadSection/HeadSection';
 import {data} from '../assets/texts/dlaDomuText';
 import Button from '../components/Button/Button';
+import PageSEO from '../components/PageSEO';
+import {dlaDomuIfirmSeo} from '../assets/texts/seoText';
 
 // const HeadSection = styled.section`
 //     padding: var(--main-padding);
@@ -80,6 +82,11 @@ const BarWrapper = styled.div`
     align-items: center;
     flex-basis: 500px;
 
+    p,span {
+
+    font-size: 2rem;
+    }
+
     @media (max-width: 780px) {
         padding: 1rem 10vw;
         flex-direction: column;
@@ -105,7 +112,7 @@ const FibreImageBar = styled.div`
     padding: 0.6rem 22vw;
     background-color: #fff;
     color: #000;
-    border: 1px solid #e1e1e1;
+    border: 2px solid #e1e1e1;
 
     p, span {
         font-weight: 600;
@@ -130,6 +137,7 @@ const FibreImageBar = styled.div`
 const DlaDomuPage = () => {
     return (
         <>
+            <PageSEO title={dlaDomuIfirmSeo.title} description={dlaDomuIfirmSeo.description}/>
             <MainSlide mainText='Internet dla domu i firm' image={bgImage}/>
             <HeadSection
                 header="Internet światłowodowy dla domu"
@@ -157,7 +165,7 @@ const DlaDomuPage = () => {
                     <p> Oferujemy budowę oraz podłączenie do internetu światłowodowego oraz rozprowadzenie internetu bezprzewodowego po całej firmie aby jego sygnał był stabilny i silny w całej siedzibie firmy. Rozpoczynając z nami współpracę nie będziesz musiał martwić się fatalnej jakości połączeniami z klientem.</p>
                     <FibreImageBar>
                         <BarWrapper>
-                            <p>100Mb/s juz od: <span>99zł</span></p>
+                            <p>100Mb/s juz od: <span>59zł</span></p>
                             <BarButton text='sprawdz pakiety' link='/pakiety' bgColor='var(--main-dark)' hoverColor='var(--main-red)'/>
                         </BarWrapper>
                     </FibreImageBar>

@@ -4,6 +4,8 @@ import bgImage from "../assets/images/tvn1.jpg";
 import MainSlide from '../components/MainSlide/MainSlide';
 import AboutSection from '../components/AboutSection/AboutSection';
 import {aboutData as data} from '../assets/texts/aboutUs';
+import PageSEO from '../components/PageSEO';
+import { oNasSeo } from '../assets/texts/seoText';
 
 const SectionAbout = styled.section`
   padding: 0;
@@ -27,6 +29,7 @@ const SectionText = styled.div`
 const OnasPage = () => {
     return (
     <>
+        <PageSEO title={oNasSeo.title} description={oNasSeo.description}/>
         <MainSlide mainText='O nas' image={bgImage}/>
         <SectionAbout id='onas'>
             <SectionText>

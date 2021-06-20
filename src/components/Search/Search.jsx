@@ -14,6 +14,7 @@ const SearchWrapper = styled.div`
     margin-top: 3rem;
     background-color: var(--main-red);
     position: relative;
+    z-index: 10;
 
     input {
         min-width: 300px;

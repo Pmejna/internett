@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 import Navigation from '../components/Navigation/Navigation';
 import GlobalStyles from '../assets/styles/globalStyles';
-import SEO from "../components/seo";
 
 import Contact from '../components/Contact/Contact';
 import Search from '../components/Search/Search';
 import MainSlide from '../components/MainSlide/MainSlide';
 import PackagesUniversalCard from '../components/PackagesUniversalCard/PackagesUniversalCard';
 import bgImage from '../assets/images/zasieg-bg.png';
+import PageSEO from '../components/PageSEO';
 const MainContent = styled.main`
 
   /* margin-top: var(--nav-height); */
@@ -92,6 +92,7 @@ const PackageCardsWrapper = styled.div`
 const Place = ({pageContext}) => {
     return (
         <>
+            <PageSEO title={`${pageContext.place} internet światłowodowy i telewizja`} description={pageContext.textMeta} />
             <MainContent>
             <MainSlide mainText={`Internet światłowodowy ${pageContext.place}`} image={bgImage}/>
                 <Search /> 

@@ -125,12 +125,11 @@ const  PackagePrice = styled.div`
         line-height: 4rem;
    }
 
-    .from {
-        position: absolute;
-        left: -3rem;
-        bottom: -1rem;
+    .brutto {
         font-size: 1.3rem;
         text-transform: capitalize;
+        padding-left: 0.6rem;
+        color: #008f11;
     }
 `;
 
@@ -146,6 +145,9 @@ const CardButton = styled(Button)`
         background-color: #000;
         color: #fff;
         text-decoration: none;
+        &::before {
+            background-color: #1d1919;
+        }
     }
     
 `;
@@ -177,7 +179,7 @@ const OfferPackageCard = ({data, color, bestSeller, subpage, link, className}) =
                 </PackagePerk>
             </CardPackageInfo>
             <PackagePrice>
-                    <div className='price'>{price}zł<span className='from'>Od</span></div>
+                    <div className='price'>{price}zł<span className='brutto'>Brutto</span></div>
                     <span>miesięcznie</span>
                 </PackagePrice>
                 {

@@ -39,6 +39,9 @@ const FooterHead = styled.div`
     }
 `;
 
+const LogoWrapper = styled.div`
+`;
+
 const Logo = styled.img`
     width: 11rem;
     height: auto;
@@ -60,16 +63,23 @@ const PhoneNumbers = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    img {
+        height: 2rem;
+    }
 
     a {
         text-decoration: none;
         color: var(--main-dark);
         font-size: 2.2rem;
         font-weight: 500;
-        margin-left: 2rem;
+        margin-left: 1rem;
+        margin-right: 2rem;
     }
 
     @media (max-width: 780px) {
+        flex-direction: column;
+        a {
+        }
         img {
             height: 2rem;
         }
@@ -155,10 +165,21 @@ const Contact = ({zasieg}) => {
             
             <ContactFooter>
                 <FooterHead>
-                    <Logo src={logoImg}/>
+                    <LogoWrapper>
+                        <div>
+
+                        <Logo src={logoImg}/>
+                        </div>
+                    </LogoWrapper>
                     <PhoneNumbers>
-                        <img src={phoneIcon} alt=""/>
-                        <a href="tel:+44774564634">0774 564 634</a>
+                        <div>
+                            <img src={phoneIcon} alt=""/>
+                            <a href="tel:+44774564634">602 185 391</a>
+                        </div>
+                        <div>
+                            <img src={phoneIcon} alt=""/>
+                            <a href="tel:+44774564634">602 185 393</a>
+                        </div>
                     </PhoneNumbers>
                 </FooterHead>
                 <FooterData>
@@ -177,7 +198,7 @@ const Contact = ({zasieg}) => {
                     </FooterDataBox>
                     <FooterDataBox>
                         <h4>Godziny pracy:</h4>
-                        <p>poniedziałek-piątek: <span>8 - 16</span></p>
+                        <p>poniedziałek-piątek: <span>8 - 18</span></p>
                         <p>sobota: <span>10 - 14</span></p>
                     </FooterDataBox>
                     <FooterImage src={footerBg}></FooterImage>

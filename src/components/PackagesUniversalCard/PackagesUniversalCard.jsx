@@ -101,13 +101,10 @@ const  PackagePrice = styled.div`
         color: #27CC00;
    }
 
-    .from {
-        position: absolute;
-        left: -3rem;
-        bottom: -1rem;
+    .brutto {
         font-size: 1.3rem;
         text-transform: capitalize;
-        color: #000;
+        color: #27CC00;
     }
 
     @media (max-width: 780px) {
@@ -136,8 +133,9 @@ const PackageUniversalCard = ({place, color, speed, price, text, packageName, cl
                 </PackageSpeed>
                 <div>Brak limitu danych</div>
                 <PackagePrice>
-                        <div className='price'>{price}zł<span className='from'>Od</span></div>
+                        <div className='price'>{price}zł</div>
                         <span>miesięcznie</span>
+                        <span className='brutto'>Brutto</span>
                 </PackagePrice>
             </CardPackageInfo>
             <CardPackageParagraph>

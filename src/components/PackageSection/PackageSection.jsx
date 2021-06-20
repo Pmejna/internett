@@ -18,7 +18,7 @@ const PackageSectionWrapper = styled.section`
     background-color: ${({bgColor}) => bgColor ? bgColor : 'transparent'};
     background-image:  ${({bgImage}) => bgImage ? bgImage : null};
 
-    @media (max-width: 780px) {
+    @media (max-width: 1000px) {
         flex-direction: column;   
         padding: var(--main-padding-mobile);
     }
@@ -36,8 +36,10 @@ const OfferPackageInfo = styled.div`
         min-width: unset;
     }
 
-    @media (max-width: 780px) {
+
+    @media (max-width: 1000px) {
         margin: 2rem 0 0;
+        width: 100%;
     }
 `;
 
@@ -83,9 +85,13 @@ const OfferInfoText = styled.div`
 
 const OfferPackageCardStyled = styled(OfferPackageCard)`
     margin: 0;
+    min-width: 270px;
+
     @media (max-width: 1000px) {
         flex-basis: 100%;
+        width: 100%;
         max-width: none;
+        margin-bottom: 2rem;
     }
 `;
 

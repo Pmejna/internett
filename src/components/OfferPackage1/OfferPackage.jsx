@@ -32,7 +32,7 @@ const packageText = {
             // {key: '002c', text: 'cecha1'},
             // {key: '003c', text: 'cecha2'},
         ],
-        price: '100'
+        price: '99'
         },
     ultra: {
         name: 'ultra',
