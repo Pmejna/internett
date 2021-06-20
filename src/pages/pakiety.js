@@ -70,9 +70,9 @@ const PakietyPage = () => {
         <PageSEO title={pakietySeo.title} description={pakietySeo.description}/>
         <MainSlide mainText='Pakiety' image={bgImage}/>
         <HeadSection header={headerText} paragraph={paragraphText}/>
-        <PackageSection data={packageText.lekki} color='#a1a1a1'/>
-        <PackageSection data={packageText.standard} color='#2784FE' bgColor='#F1F1F1'/>
-        <PackageSection data={packageText.premium}/>
+        <PackageSection data={packageText.lekki} color='#a1a1a1' id="lekki"/>
+        <PackageSection data={packageText.standard} color='#2784FE' bgColor='#F1F1F1' id="standard"/>
+        <PackageSection data={packageText.premium} id="premium"/>
     </>
     )
 };
