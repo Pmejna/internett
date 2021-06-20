@@ -96,10 +96,10 @@ const OfferPackageCardStyled = styled(OfferPackageCard)`
 `;
 
 
-const PackageSection = ({data, color, bestSeller, bgColor, bgImage}) => {
+const PackageSection = ({data, color, bestSeller, bgColor, bgImage, id}) => {
     const {name, speed, perks, price, paragraph1, paragraph2} = data;
     return (
-        <PackageSectionWrapper bgColor={bgColor} bgImage={bgImage}>
+        <PackageSectionWrapper bgColor={bgColor} bgImage={bgImage} id={id}>
             <OfferPackageCardStyled className='card' data={data} color={color} bestseller={bestSeller} subpage />
             <OfferPackageInfo>
                 <OfferInfoBar color={color}>
