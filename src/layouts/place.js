@@ -105,7 +105,7 @@ const Place = ({pageContext}) => {
                         </div>
                         <div>
                             <MainImage>
-                                <iframe src="https://www.google.com/maps/d/u/7/embed?mid=1q4OZkUGExZT9NHAGoYcZFLtIiZ5M2gF2"></iframe>
+                                <iframe src={pageContext.mapLink}></iframe>
                             </MainImage>
                         </div>
 

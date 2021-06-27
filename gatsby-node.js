@@ -33,7 +33,8 @@ exports.createPages = ({actions}) => {
         textPackage2: place.textPackage2,
         textPackage3: place.textPackage3,
         textContact: place.textContact,
-        textMeta: place.textmeta
+        textMeta: place.textmeta,
+        mapLink: place.mapLink
       },
     })
   })

@@ -22,3 +22,8 @@ export const telewizjaSeo = {
     description: ``,
     title: ``
 }
+
+export const voipSeo = {
+    description: 'Telefon VOIP w okolicy Warszawy',
+    title: 'Telefon VOIP'
+}

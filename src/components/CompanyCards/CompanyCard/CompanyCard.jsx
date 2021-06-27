@@ -45,6 +45,10 @@ const CompanyCardWrapper = styled.div`
         object-fit: cover;
         overflow: hidden;
         transition: 0.3s ease-in-out;
+
+        @media (max-width: 760px) {
+            /* height: 300px; */
+        }
     }
 
     img {

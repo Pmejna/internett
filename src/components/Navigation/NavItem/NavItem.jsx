@@ -22,8 +22,8 @@ const NavItemWrapper = styled.li`
         }
     }
 
-    @media (max-width: 800px) {
-        a { font-size: 3.6rem;}
+    @media (max-width:760px) {
+        a { font-size: 2.6rem;}
     }
 `;
 

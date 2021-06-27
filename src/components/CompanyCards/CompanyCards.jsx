@@ -25,6 +25,8 @@ const CompanyCardsWrapper = styled.section`
     }
 
     @media (max-width: 1200px) {
+        padding-left: 16vw;
+        padding-right: 16vw;
         grid-template-columns: repeat(2, 300px);
 
         div:nth-last-of-type(4) {

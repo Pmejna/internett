@@ -20,7 +20,7 @@ const NavUl = styled.ul`
     justify-content: space-between;
     align-items: ${({responsive}) => responsive ? 'center' : null};
     list-style: none;
-    flex-basis: 70%;
+    flex-basis:${({responsive}) => responsive ? '70%' : '85%'};
 
     @media (max-width: 1200px) {
         display: ${({responsive}) => responsive ? 'flex' : 'none'};
@@ -37,10 +37,11 @@ const NavList = ({state, linkClicked, responsive}) => {
     let line6 = useRef(null);
     let line7 = useRef(null);
     let line8 = useRef(null);
+    let line9 = useRef(null);
     
     useEffect(() => {
         if(state.clicked) {
-            fadeInUp(line1, line2, line3, line4, line5, line6, line7, line8)
+            fadeInUp(line1, line2, line3, line4, line5, line6, line7, line8, line9)
         }
     }, [state] 
     );
@@ -72,26 +73,31 @@ const NavList = ({state, linkClicked, responsive}) => {
                              linkClicked={linkClicked}
                              ref={el4 => (line4 = el4)}
                              />
+                        <NavItem path="/voip"
+                             text="Telefon VOIP" 
+                             linkClicked={linkClicked}
+                             ref={el5 => (line5 = el5)}
+                             />
                         <NavItem path="/pakiety"
                              text="Pakiety" 
                              linkClicked={linkClicked}
-                             ref={el5 => (line5 = el5)}
+                             ref={el6 => (line6 = el6)}
                              />
                         <NavItem path="/zasieg"
                              text="Zasięg" 
                              linkClicked={linkClicked}
-                             ref={el6 => (line6 = el6)}
+                             ref={el7 => (line7 = el7)}
                              />
                         <NavItem path="#kontakt"
                              text="Kontakt" 
                              linkClicked={linkClicked}
-                             ref={el7 => (line7 = el7)}
+                             ref={el8 => (line8 = el8)}
                              />
                         <NavItem path="/panelklienta"
                              text="Panel klienta" 
                              
                              linkClicked={linkClicked}
-                             ref={el8 => (line8 = el8)}
+                             ref={el9 => (line9 = el9)}
                              />
                     </NavUl>
     )

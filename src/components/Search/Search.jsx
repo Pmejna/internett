@@ -36,6 +36,11 @@ const SearchWrapper = styled.div`
         align-items: flex-start;
         padding: 2rem 10vw;
 
+        input {
+            min-width: unset;
+            width: 100%;
+        }
+
         h3 {
             text-align: left;
         }

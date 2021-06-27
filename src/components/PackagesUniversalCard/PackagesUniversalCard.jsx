@@ -35,14 +35,14 @@ const CardPackageLabel = styled.div`
         padding: 2rem;
 
         h3 {
-
+        
         font-size: 1.3rem;
+        text-align: center;
         }
     }   
 
     h3 {
         font-size: 2.2rem;
-        padding-left: 3rem;
         color: #fff;
 
         span {
@@ -71,6 +71,7 @@ const CardPackageInfo = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 0;
     }   
 `;
 
@@ -82,6 +83,7 @@ const PackageSpeed = styled.div`
         p {
         font-size: 2rem;
         align-items: center;
+        text-align: center;
         }
     }   
 
@@ -107,7 +109,7 @@ const  PackagePrice = styled.div`
         color: #27CC00;
     }
 
-    @media (max-width: 780px) {
+    @media (max-width: 760px) {
         flex-basis: 100%;
         margin-top: 1.5rem;
     }   
@@ -116,6 +118,11 @@ const  PackagePrice = styled.div`
 
 const CardPackageParagraph = styled.div`
     padding: 3rem;
+
+    @media (max-width: 760px) {
+        padding: 1.6rem;
+        text-align: center;
+    }
 `;
 
 
