@@ -125,7 +125,7 @@ const Place = ({pageContext}) => {
                 </PackageCardsWrapper>
                 </PlaceWrapper> 
                 {pageContext.place ? 
-                <PlaceContact>
+                <PlaceContact id="kontakt">
                     <h2>Kontakt – Internet Światłowodowy {pageContext.place}</h2>
                     <p>{pageContext.textContact}</p>
                 </PlaceContact>
