@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import bgImage from "../assets/images/tv001.jpeg";
+import bgImage from "../assets/images/tv-primary-image.jpg";
 import MainSlide from '../components/MainSlide/MainSlide';
-import internetTvImage from '../assets/images/InternetTv.jpeg';
+import internetTvImage from '../assets/images/tv-secondary-image.jpg';
 import TvPackagesSection from '../components/TvPackagesSection/TvPackagesSection';
 import {tvPackagesData as data} from '../assets/texts/tvCards';
 import {tvPremiumData as data2} from '../assets/texts/tvCards';

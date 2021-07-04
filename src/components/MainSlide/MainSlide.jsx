@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Button from '../Button/Button';
 
-import bgImage from '../../assets/images/001.jpeg';
+import bgImage from '../../assets/images/main-image.jpg';
 
 const MainSlideWrapper = styled.section`
     width: 100vw;

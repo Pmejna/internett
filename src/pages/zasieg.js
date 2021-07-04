@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MainSlide from '../components/MainSlide/MainSlide';
 import HeadSection from '../components/HeadSection/HeadSection';
-import bgImage from '../assets/images/zasieg-bg.png';
+import bgImage from '../assets/images/zasieg-image.jpg';
 import Search from '../components/Search/Search';
 import locationsData from '../assets/texts/miejscowosci.json';
 

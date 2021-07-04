@@ -1,5 +1,5 @@
-import image1 from '../images/coffeeTime.jpeg';
-import image2 from '../images/badWeatherWork.jpeg';
+import image1 from '../images/coffee-break-image.jpg';
+import image2 from '../images/laptop-rain-image.jpg';
 import lines1 from '../images/Group 15.png';
 import lines2 from '../images/Group 16.png';
 

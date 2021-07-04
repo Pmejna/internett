@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import bgImage from "../assets/images/voip-bg.png";
+import bgImage from "../assets/images/voip-image.jpg";
 import MainSlide from '../components/MainSlide/MainSlide';
 import AboutSection from '../components/AboutSection/AboutSection';
 import {aboutData as data} from '../assets/texts/aboutUs';

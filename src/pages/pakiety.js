@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import bgImage from '../assets/images/Packages.jpeg';
+import bgImage from '../assets/images/packages-image.jpg';
 
 import MainSlide from '../components/MainSlide/MainSlide';
 import HeadSection from '../components/HeadSection/HeadSection';

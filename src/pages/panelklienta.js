@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../components/Button/Button';
-import panelKlienta from '../assets/images/panel-klienta.png'
+import panelKlienta from '../assets/images/panel-image.jpg'
 
 const PanelKlientaWrapper = styled.section`
     position: relative;

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MainSlide from '../components/MainSlide/MainSlide';
 import VerticalSection from '../components/VerticalSection/VerticalSection';
-import bgImage from '../assets/images/DlaDomu.jpeg';
+import bgImage from '../assets/images/family-image.jpg';
 import lines1 from '../assets/images/Group 15.png';
 import Lines01 from "../components/Lines/Lines01";
 import fibreImg from '../assets/images/fibre001.jpeg';
