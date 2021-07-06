@@ -71,7 +71,8 @@ const OfferInfoText = styled.div`
     padding: 1rem 5rem 2rem ;
     h4 {
         font-size: 2.2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1.6rem;
+        margin-top: 1.6rem;
     }
 
     @media (max-width: 780px) {
