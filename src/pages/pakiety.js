@@ -24,10 +24,8 @@ const packageText = {
             użytkownia sieci w domu. Doskonały wybór jeśli skupiasz się na sporadycznym oglądaniu filmów, czy
             ograniczonym spędzonym czasie przed komputerem. Pakiet dla ludzi, dla których internet jest
             dodatkiem i formą pozyskiwania informacji.`,
-        paragraph2: `Pakiet lekki internetu światłowodowego jest skierowany do klientów o ograniczonych potrzebach
-            użytkownia sieci w domu. Doskonały wybór jeśli skupiasz się na sporadycznym oglądaniu filmów, czy
-            ograniczonym spędzonym czasie przed komputerem. Pakiet dla ludzi, dla których internet jest
-            dodatkiem i formą pozyskiwania informacji.`
+        paragraph2: `W danym poziomie cenowym naszego pakeitu otrzymają Państwo stabilne łącze o predkości pobierania 100mb/s oraz takiej samej prędkośći wysyłania danych. W pakiecie zaliczona jest również technologia VoIP, która daje możliwość założenia telefonu stacjonarnego. Pakiet nie zawiera ograniczeń transferu danych. Możesz cieszyć się internetem bez końca. 
+        `
         },
     standard: {
         name: 'standard',
@@ -36,14 +34,8 @@ const packageText = {
             {key: '001b', text: 'brak limitu danych'},
         ],
         price: '79',
-        paragraph1: `Pakiet lekki internetu światłowodowego jest skierowany do klientów o ograniczonych potrzebach
-            użytkownia sieci w domu. Doskonały wybór jeśli skupiasz się na sporadycznym oglądaniu filmów, czy
-            ograniczonym spędzonym czasie przed komputerem. Pakiet dla ludzi, dla których internet jest
-            dodatkiem i formą pozyskiwania informacji.`,
-        paragraph2: `Pakiet lekki internetu światłowodowego jest skierowany do klientów o ograniczonych potrzebach
-            użytkownia sieci w domu. Doskonały wybór jeśli skupiasz się na sporadycznym oglądaniu filmów, czy
-            ograniczonym spędzonym czasie przed komputerem. Pakiet dla ludzi, dla których internet jest
-            dodatkiem i formą pozyskiwania informacji.`
+        paragraph1: `Pakiet standard internetu światłowodowego skierowany jest do użytkowników, którzy próćz sporadycznego użytkowania internetu w celu pozyskiwania informacji czy oglądania popularnych platform streamingowych, od czasu do czasu korzystają z aplikacji do kontaktu z innymi i używają kamerki internetowej. Łącze pozwala na stabilne i szybkie uplodowanie treści do sieci internet. `,
+        paragraph2: `Doskonałę rozwiązanie dla małych rodzin, w których każdy korzysta z internetu w celach rekreacyjnych. Oferujemy prędkość pobierania na poziomie 200mb/s a wysyłania na poziomie 100mb/s. W ofercie rónież zawarta jest technologia VoIP oraz nie ma limitów danych. `,
         },
     premium: {
         name: 'premium',
@@ -52,14 +44,8 @@ const packageText = {
             {key: '001c', text: 'brak limitu danych'},
         ],
         price: '99',
-        paragraph1: `Pakiet lekki internetu światłowodowego jest skierowany do klientów o ograniczonych potrzebach
-            użytkownia sieci w domu. Doskonały wybór jeśli skupiasz się na sporadycznym oglądaniu filmów, czy
-            ograniczonym spędzonym czasie przed komputerem. Pakiet dla ludzi, dla których internet jest
-            dodatkiem i formą pozyskiwania informacji.`,
-        paragraph2: `Pakiet lekki internetu światłowodowego jest skierowany do klientów o ograniczonych potrzebach
-            użytkownia sieci w domu. Doskonały wybór jeśli skupiasz się na sporadycznym oglądaniu filmów, czy
-            ograniczonym spędzonym czasie przed komputerem. Pakiet dla ludzi, dla których internet jest
-            dodatkiem i formą pozyskiwania informacji.`
+        paragraph1: `Pakiet ultra internetu światłowodowego jest skierowany do użytkowników którzy w posósb profesjonalny korzystają z sieci. Np polecamy ten pakiet wszystkim freelanserom, którzy działają w branżach artystycznych, technicznych, w których wymagany jest przesył ogromnych pakietów danych w bardzo krótkim czasie. Polecamy ten pakiet aspirującym youtuberom, filmowcom i osobom spędzających długie godziny na treningach w rywalizacjach online w wymagające graficzne. Oferta skeirowana jest również do rodzin wielodzietnych. `,
+        paragraph2: `Pakiet zawiera prędkość pobierania na poziomie 500 mb/s oraz prędkość wysyłania na poziomie 100mb/s. Zawiera również VoIP oraz brak limitu danych. `
         },
     };
 
