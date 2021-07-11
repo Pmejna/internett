@@ -12,7 +12,7 @@ const MainSlideWrapper = styled.section`
     overflow: hidden;
 
     @media (max-width: 768px) {
-        height: ${({main}) => main ? '100vh' : '40vh'};
+        height: ${({main}) => main ? '100vh' : '60vh'};
     }
 `;
 

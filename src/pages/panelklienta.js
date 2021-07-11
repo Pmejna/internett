@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../components/Button/Button';
-import panelKlienta from '../assets/images/panel-image.jpg'
+import panelKlienta from '../assets/images/panel-image.jpg';
+import PageSEO from '../components/PageSEO';
+import { panelKlientaSeo } from '../assets/texts/seoText';
 
 const PanelKlientaWrapper = styled.section`
     position: relative;
@@ -10,6 +12,13 @@ const PanelKlientaWrapper = styled.section`
     background-image: url(${panelKlienta});
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media(max-width: 760px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
 `;
 
 const PanelKlientaForm = styled.form`
@@ -32,6 +41,10 @@ const PanelKlientaForm = styled.form`
     }
     background-color: #fff;
     border: 1px solid #000;
+
+    @media(max-width: 760px) {
+        position: static;
+    }
 `;
 
 const FormFields = styled.div`
@@ -61,6 +74,8 @@ const FormFields = styled.div`
 
 const PanelKlienta = () => {
     return (
+        <>
+        <PageSEO title={panelKlientaSeo.title} description={panelKlientaSeo.description}/>
         <PanelKlientaWrapper>
             <PanelKlientaForm method="post" action="https://panel-tip.sekocin.pl/"> 
                 <h1>Panel Klienta</h1>
@@ -78,6 +93,7 @@ const PanelKlienta = () => {
                 <Button text="zaloguj" type="submit" name="loginform[submit]"/>
             </PanelKlientaForm>
         </PanelKlientaWrapper>
+        </>
     )
 };
 

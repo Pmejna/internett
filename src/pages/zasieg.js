@@ -1,32 +1,65 @@
 import React from 'react';
+import {Link} from 'gatsby';
 import styled from 'styled-components';
 import MainSlide from '../components/MainSlide/MainSlide';
 import HeadSection from '../components/HeadSection/HeadSection';
 import bgImage from '../assets/images/zasieg-image.jpg';
 import Search from '../components/Search/Search';
 import locationsData from '../assets/texts/miejscowosci.json';
+import PageSEO from '../components/PageSEO';
+import { zasiegSeo } from '../assets/texts/seoText';
 
 
+const ListContainer = styled.ul`
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    list-style: square;
+    margin-left: 3rem;
+    margin-right: 3rem;
 
-const SearchSection = styled.section`
+    @media(max-width: 760px) {
+        margin: 3rem 0;
+        a {
+            font-size: 2rem;
+        }
+    }
 
-`;
-
-const SearchWrapper = styled.div`
-
-`;
-
-const SearchOverviewText = styled.div`
-
+    li {
+       &>a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #000;
+            &:hover {
+                color: red;
+            }
+       }
+    }
 `;
 
 const ZasiegPage = ({pageContext}) => {
     console.log(pageContext);
     return (
         <>
+            <PageSEO title={zasiegSeo.title} description={zasiegSeo.description}/>
             <MainSlide mainText='Internet światłowodowy, zasięg' image={bgImage}/>
             <HeadSection 
-                paragraph='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores. '>
+                header={`Mapa zasięgu`}
+                paragraph='Przedstawiamy mapę zasięgu Internetu światłowodowego dla domu oraz dla firm. Wybierając dowolny oferowany pakiet Internetu światłowodowego masz pewność, że otrzymujesz najlepszą jakość i prędkość usługi w stosunku do proponowanej ceny. Jesteśmy liderem wśród dostawców tego typu usług, dlatego oferowane  przez nas rozwiązania idealnie pasują do potrzeb użytkowników korzystających z Internetu światłowodowego. Miejscowości w jakich oferujemy usługi internetowe to:'
+            >
+                <ListContainer>
+                    {
+                         locationsData.map(location => {
+                             return (
+                             <li key={location.place}>
+                                 <Link to={'/zasieg/'+location.link}>
+                                     {location.place}
+                                </Link>
+                            </li>
+                             )
+                         })
+                    }
+                </ListContainer>
             </HeadSection>
             <Search/>
             {/* <SearchSection>

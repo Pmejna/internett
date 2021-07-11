@@ -6,6 +6,8 @@ import internetTvImage from '../assets/images/tv-secondary-image.jpg';
 import TvPackagesSection from '../components/TvPackagesSection/TvPackagesSection';
 import {tvPackagesData as data} from '../assets/texts/tvCards';
 import {tvPremiumData as data2} from '../assets/texts/tvCards';
+import PageSEO from '../components/PageSEO';
+import { telewizjaSeo } from '../assets/texts/seoText';
 
 const TvSection = styled.section`
 
@@ -68,6 +70,7 @@ const OnasPage = () => {
     console.log(data);
     return (
     <>
+        <PageSEO title={telewizjaSeo.title} description={telewizjaSeo.description}/>
         <MainSlide mainText='Telewizja' image={bgImage}/>
         <TvSection>
                 <h2>Ofert telewizji internetowej</h2>

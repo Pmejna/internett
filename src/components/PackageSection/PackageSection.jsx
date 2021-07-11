@@ -30,6 +30,7 @@ const OfferPackageInfo = styled.div`
     box-shadow: var(--main-shadow);
     min-width: 750px;
     margin-left: 2rem;
+    background-color: #fff;
 
     @media (max-width: 1200px) {
         flex-basis: 70%;

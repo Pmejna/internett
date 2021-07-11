@@ -12,6 +12,9 @@ const ContactSection = styled.section`
     }
     @media (max-width: 780px) {
         padding: 1rem 10vw 3rem;
+        h2, p {
+            text-align: left;
+        }
         
      }
 `;

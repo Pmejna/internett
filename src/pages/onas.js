@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import bgImage from "../assets/images/tvn1.jpg";
+import bgImage from "../assets/images/tvn.jpg";
 import MainSlide from '../components/MainSlide/MainSlide';
 import AboutSection from '../components/AboutSection/AboutSection';
 import {aboutData as data} from '../assets/texts/aboutUs';

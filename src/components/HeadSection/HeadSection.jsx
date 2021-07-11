@@ -22,11 +22,12 @@ const HeadSectionWrapper = styled.section`
     }
 `;
 
-const HeadSection = ({header, paragraph}) => {
+const HeadSection = ({header, paragraph, children}) => {
     return (
         <HeadSectionWrapper>
                 <h2>{header}</h2>
                 <p>{paragraph}</p>
+                {children}
         </HeadSectionWrapper>
     )
 };
