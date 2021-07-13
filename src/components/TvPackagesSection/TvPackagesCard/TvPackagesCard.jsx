@@ -233,7 +233,7 @@ const TvPackagesCard = ({data, link, className, optional}) => {
                     }
                 </PackageImages>
             </CardPackageInfo>
-            <CardButton className='button' link={link}></CardButton>
+            <CardButton className='button' link={link} a></CardButton>
         </TvPackageCardWrapper>
     )
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'gatsby';
+import pdfFile from '../../assets/pdf/internett-pakiety.pdf';
 
 const ButtonWrap = styled.button`
     margin-top: 2rem;
@@ -45,10 +46,18 @@ const ButtonWrap = styled.button`
     }
 `;
 
-const Button = ({text, className, link, bgColor, hoverColor}) => {
+const Button = ({text, className, link, bgColor, hoverColor, a}) => {
     return (
+        
         <ButtonWrap className={className} bgColor={bgColor} hoverColor={hoverColor}>
-            <Link to={link}>{text ? text : 'więcej'}</Link>
+            {
+                !a ? (
+                    <Link to={link}>{text ? text : 'więcej'}</Link>                    
+                ) : null
+            }
+            {a ? (
+                <a target='_blank' href={pdfFile}>Więcej</a>
+            ) : null}
         </ButtonWrap>
     )
 };
