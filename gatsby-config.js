@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#FB2525`,
         theme_color: `#FB2525`,
         display: `minimal-ui`,
-        icon: `src/assets/images/Logo.svg`, // This path is relative to the root of the site.
+        icon: `src/assets/images/favicon-05.png`, // This path is relative to the root of the site.
       },
     },
     {

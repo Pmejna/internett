@@ -67,6 +67,7 @@ const IndexPage = () => {
       aboveText={aboveText}
       priceText={priceText}
       main
+      link='dladomuifirm'
     />
     <section>
       <p>{mainParagraph}</p>
@@ -78,7 +79,7 @@ const IndexPage = () => {
     <SectionOffer>
       <h2>{boxSection.companyInternet_data.header}</h2>
       <p>{boxSection.companyInternet_data.paragraph}</p>
-      <Button text='zobacz ofertę dla firm'/>
+      <Button link='/dladomuifirm#dlafirm' text='zobacz ofertę dla firm' />
     </SectionOffer>
     <SectionPackages>
       <SectionText>

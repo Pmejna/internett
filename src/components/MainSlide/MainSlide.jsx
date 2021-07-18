@@ -103,7 +103,7 @@ const MainSlideText = styled.div`
     }
 `;
 
-const MainSlide = ({mainText, subText, buttonText, aboveText, priceText, image, main}) => {
+const MainSlide = ({mainText, subText, buttonText, aboveText, priceText, image, main, link}) => {
     return (
         <MainSlideWrapper main={main}>
             <MainSlideImage src={image ? image : bgImage}/>
@@ -116,7 +116,7 @@ const MainSlide = ({mainText, subText, buttonText, aboveText, priceText, image, 
                 }
 
                 {   
-                 buttonText  && <Button text={buttonText}/>
+                 buttonText  && <Button link={link?link:false} text={buttonText}/>
                 }
             </MainSlideText>
         </MainSlideWrapper>

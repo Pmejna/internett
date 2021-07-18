@@ -14,6 +14,10 @@ exports.onCreatePage = ({ page, actions }) => {
       page.context.layout = "zasieg"
       createPage(page)
     }
+    if (page.path.match(/telewizja/)) {
+      page.context.layout = "tv"
+      createPage(page)
+    }
     ;
 };
 

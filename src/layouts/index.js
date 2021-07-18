@@ -33,6 +33,21 @@ const AlternativeLayout = ({pageContext, children}) => {
   </>
 )};
 
+const TvLayout = ({pageContext, children}) => {
+  let app = useRef(null);
+  console.log(pageContext);
+  return (
+  <>
+    <GlobalStyles />
+    <Navigation />
+    <MainContent>
+      {children}  
+    <Contact tv={true}/>
+    <Arrow />
+    </MainContent>
+  </>
+)};
+
 
 const MainLayout = ({children}) => {
   let app = useRef(null);
@@ -55,6 +70,9 @@ const MainLayout = ({children}) => {
 export default ({ children, pageContext }) => {
   if (pageContext.layout === "zasieg") {
     return <AlternativeLayout>{children}</AlternativeLayout>
+  }
+  if (pageContext.layout === "tv") {
+    return <TvLayout>{children}</TvLayout>
   }
   return <MainLayout>{children}</MainLayout>
 }

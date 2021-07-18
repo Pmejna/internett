@@ -58,7 +58,7 @@ const packageText = {
             {key: '003d', text: 'zawiera voip'},
             {key: '002d', text: 'idealny dla firm'},
         ],
-        price: '99',
+        price: '149',
         paragraph1: `Pakiet Ultra Internetu światłowodowego jest najlepszym wyborem dla osób potrzebujących stałego i możliwie najszybszego dostępu do Internetu. Jest to idealny wybór dla firm lub osób potrzebujących jak najszybszej możliwej komunikacji. Świetnie sprawdza się przy wielowątkowej pracy z wykorzystaniem maksymalnych prędkości łącza.`,
         paragraph2: `Najwyższy pakiet Internetu światłowodowego Ultra to maksimum korzyści, jakie daje użytkownikowi łącze internetowe. Ściąganie i wysyłanie dużych plików trwa zaledwie kilka sekund. Oglądanie filmów czy popularne streamy wideo z wykorzystaniem tego typu łącza to czysta przyjemność pracy.`
         },

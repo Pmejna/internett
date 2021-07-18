@@ -138,6 +138,7 @@ const DlaDomuPage = () => {
             <PageSEO title={dlaDomuIfirmSeo.title} description={dlaDomuIfirmSeo.description}/>
             <MainSlide mainText='Internet dla domu i firm' image={bgImage}/>
             <HeadSection
+                id='dladomu'
                 header="Internet światłowodowy dla domu"
                 paragraph={`Polecamy współpracę z naszą firmą w celu bezpośredniego połączenia Twojej prywatnej posiadłości
                 do naszej sieci. Jeśli szykujesz budowę, lub Twój dom stoi już w wymarzonej lokalizacji,
@@ -148,9 +149,10 @@ const DlaDomuPage = () => {
                 Tworząc własną sieć, dlatego jesteśmy pewni o jej niezawodności i wysokiej jakości dostarczanego
                 łącza internetowego. Postaw na współpracę z lokalnym polskim dostawcą aby mieć pewność
                 o profesjonalnym i osobistym podejściu do klienta.`}
-            />
+                />
             {/* <Lines01 image={lines1} alt="superszybki internet"/> */}
             <HeadSection
+                id='dlafirm'
                 header='Oferta internetu dla klientów biznesowych'
                 paragraph='Dla płynności informacji w firmie oraz między kontrahentami ważna jest bezstresowa oraz niezawodna komunikacja. Aby ta taka była potrzebna jest niezawodna infrastruktura techniczna, która będzie w stanie zapewnić możliwie jak najstabilniejsze łącze do sieci internet.'>
             </HeadSection>

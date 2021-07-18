@@ -155,15 +155,26 @@ const FooterImage = styled.img`
     left: 0;
 `;
 
-const Contact = ({zasieg}) => {
+const Contact = ({zasieg, tv}) => {
 
     return (
         <>  
         {
-            zasieg ? null : <ContactSection id='kontakt'>
-                <h2>Kontakt w sprawie internetu światłowodowego</h2>
-                <p>Mamy nadzieję, że zauważyłeś, że jesteśmy pewni siebie i pewni sieci którą sukcesywnie tworzymy w Twojej okolicy od lat. Zapraszamy do kontaktu. Jesteśmy małą, lokalną polską firmą, która skupia się na naszych klientach w sposób indywidualny. Zapewniamy nie tylko najwyższą jakość łącza internetu światłowodowego, ale również indywidualną opiekę, która różni nas od wielkich dostawców tej samej technologii na rynku polskim.</p>
-            </ContactSection>
+            zasieg ? null : 
+                tv ? (
+                <ContactSection id='kontakt'>
+                    <h2>
+                        Kontakt w sprawie telewizji
+                    </h2>
+                    <p>Mamy nadzieję, że zauważyłeś, że jesteśmy pewni siebie i pewni sieci którą sukcesywnie tworzymy w Twojej okolicy od lat. Zapraszamy do kontaktu. Jesteśmy małą, lokalną polską firmą, która skupia się na naszych klientach w sposób indywidualny. Zapewniamy nie tylko najwyższą jakość łącza internetu światłowodowego, ale również indywidualną opiekę, która różni nas od wielkich dostawców tej samej technologii na rynku polskim.</p>
+                </ContactSection>) : (
+                    <ContactSection id='kontakt'>
+                        <h2>
+                            Kontakt w sprawie internetu światłowodowego
+                        </h2>
+                        <p>Mamy nadzieję, że zauważyłeś, że jesteśmy pewni siebie i pewni sieci którą sukcesywnie tworzymy w Twojej okolicy od lat. Zapraszamy do kontaktu. Jesteśmy małą, lokalną polską firmą, która skupia się na naszych klientach w sposób indywidualny. Zapewniamy nie tylko najwyższą jakość łącza internetu światłowodowego, ale również indywidualną opiekę, która różni nas od wielkich dostawców tej samej technologii na rynku polskim.</p>
+                    </ContactSection>
+                    )
         }
             
             <ContactFooter>
@@ -177,11 +188,11 @@ const Contact = ({zasieg}) => {
                     <PhoneNumbers>
                         <div>
                             <img src={phoneIcon} alt=""/>
-                            <a href="tel:+44774564634">602 185 391</a>
+                            <a href="tel:+48602185391">602 185 391</a>
                         </div>
                         <div>
                             <img src={phoneIcon} alt=""/>
-                            <a href="tel:+44774564634">602 185 393</a>
+                            <a href="tel:+48602185393">602 185 393</a>
                         </div>
                     </PhoneNumbers>
                 </FooterHead>

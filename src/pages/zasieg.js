@@ -38,7 +38,12 @@ const ListContainer = styled.ul`
 `;
 
 const ZasiegPage = ({pageContext}) => {
-    console.log(pageContext);
+    const newArray = locationsData;
+    newArray.sort((a, b) => {
+        return a.place.localeCompare(b.place);
+    })
+
+
     return (
         <>
             <PageSEO title={zasiegSeo.title} description={zasiegSeo.description}/>
